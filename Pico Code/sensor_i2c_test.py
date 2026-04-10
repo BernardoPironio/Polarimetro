@@ -46,6 +46,7 @@ def read_angle():
             print("Error:", e)
 
         sleep(0.1)
-        
+
+read_angle()
 
 
