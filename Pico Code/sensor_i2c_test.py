@@ -47,6 +47,6 @@ def read_angle():
 
         sleep(0.1)
 
-read_angle()
+check_magnet()
 
 
