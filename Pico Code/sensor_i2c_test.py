@@ -1,7 +1,7 @@
-from machine import Pin, I2C, SoftI2C
+from machine import Pin, I2C
 from time import sleep
 
-i2c = I2C(0,sda = Pin(0),scl = Pin(1),freq = 10000)
+i2c = I2C(0,sda = Pin(4),scl = Pin(5),freq = 10000)
 print('Devices found : ',i2c.scan())
 
 sda = Pin(2,Pin.IN,Pin.PULL_UP)
@@ -24,7 +24,7 @@ def check_magnet():
             ml = (s >> 4) & 1 # Magnet too low
             mh = (s >> 3) & 1 # Magnet too high
 
-            print("STATUS:", s, "MD:", md, "ML:", ml, "MH:", mh)
+            print("status_:", s, "MD:", md, "ML:", ml, "MH:", mh)
 
         except OSError as e:
             print("Error I2C:", e)
@@ -48,5 +48,6 @@ def read_angle():
         sleep(0.1)
 
 check_magnet()
+
 
 

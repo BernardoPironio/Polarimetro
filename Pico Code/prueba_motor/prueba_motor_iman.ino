@@ -7,7 +7,12 @@
 #define ADDR 0x36
 #define STATUS 0x0B //registro del sensor 
 
-BLDCDriver3PWM driver = BLDCDriver3PWM(2, 3, 4, 5); //con esto creo un driver con 3 señales PWM
+#define In1 2
+#define In2 3
+#define In3 4
+#define En 5
+
+BLDCDriver3PWM driver = BLDCDriver3PWM(In1, In2, In3, En); //con esto creo un driver con 3 señales PWM
 
 float angulo = 0; //posicion electrica del motor
 float velocidad = 0.05; //cuanto aumento por ciclo
