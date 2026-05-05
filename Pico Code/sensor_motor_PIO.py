@@ -1,4 +1,4 @@
-from machine import Pin, PWM, I2C, Timer # Pin: manage GPIO, PWM: generate PWM, I2C: read I2C, Timer: execute periodicly
+from machine import Pin, PWM, I2C, Timer, ADC # Pin: manage GPIO, PWM: generate PWM, I2C: read I2C, Timer: execute periodicly
 from math import sin, pi # sin: sin function to generate table, pi: pi value to generate table 
 from array import array
 import micropython # micropython: special functions from runtime
@@ -9,6 +9,12 @@ import gc # gc: garbage collector
 # RECOMENDADO PARA CALLBACKS / ISR
 # =========================================================
 micropython.alloc_emergency_exception_buf(100) # Protection for debug
+
+
+# =========================================================
+# PINES FOTODIODO
+# =========================================================
+fotodiodo = ADC(Pin(26))
 
 # =========================================================
 # I2C
@@ -39,7 +45,7 @@ TABLE_SIZE = 360
 
 UPDATE_HZ = 5500 # Frecuencia de actualización de conmutación(cuántas veces por segundo cambiás el duty)
 
-STEP = 5 # Paso del índice por cada tick del timer
+STEP = 7 # Paso del índice por cada tick del timer
 
 # =========================================================
 # PWM HARDWARE
@@ -111,11 +117,11 @@ motor_running = False
 # - sin crear objetos
 # =========================================================
 def motor_tick(timer):
-    global phase_idx
+    global phase_idx, pwm_u, pwm_v, pwm_w
 
-    if not motor_running:
-        return
-
+    #if not motor_running:
+    #   return
+    
     idx = phase_idx
 
     pwm_u.duty_u16(lut_u[idx])
@@ -138,6 +144,8 @@ tim = Timer() # create timer
 # =========================================================
 count = 0 # lap count
 md_prev = 0 # magnet state previous
+idx_adc = 0 # adc measurement index
+idx_periodo = 0
 t_antes = time.ticks_ms()
 last_debug = time.ticks_ms()
 
@@ -146,28 +154,36 @@ try:
     gc.disable() # disable garbage collector
 
     en.value(1) # enable driver
-    motor_running = True 
+    motor_running = True
+    phase_idx = 0
 
     # hard=True -> menos jitter
     tim.init(freq=UPDATE_HZ, mode=Timer.PERIODIC, callback=motor_tick, hard=True)
-
+    
     print("Motor encendido con PWM hardware + Timer")
     print("UPDATE_HZ =", UPDATE_HZ, "STEP =", STEP)
+    
+    periodos = array('I',[0]*1000)
+    
+    #adc_data = array('H',[0]*5000)
 
     while True:
         # lectura I2C fuera del camino crítico del motor
         i2c.readfrom_mem_into(ADDR, STATUS, i2c_buf)
         s = i2c_buf[0]
         md = (s >> 5) & 1
-
+        
         if md == 1 and md_prev == 0:
             count += 1
             t_ms = time.ticks_ms()
             periodo = time.ticks_diff(t_ms, t_antes)
+            periodos[count-1] = periodo
             t_antes = t_ms
-            # no imprimir en cada flanco
 
         md_prev = md
+        
+        # fotodiodo
+        #adc_data[idx_adc] = fotodiodo.read_u16()
 
         # debug ocasional
         now = time.ticks_ms()
@@ -187,6 +203,8 @@ finally:
     pwm_v.duty_u16(0)
     pwm_w.duty_u16(0)
     en.value(0)
+    
+    print(periodos)
 
     print("Motor apagado")
     print("Pulsos detectados:", count)
