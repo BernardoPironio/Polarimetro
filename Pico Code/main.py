@@ -83,7 +83,11 @@ tim = Timer()
 count = 0
 md_prev = 0
 
-data_adc = array('H',[0]*5000)
+N = 5000
+t0 = time.ticks_us()
+data_adc = array('H',[0]*N)
+times = array('I',[0]*N)
+
 idx_adc = 0
 
 t_antes = time.ticks_ms()
@@ -99,6 +103,7 @@ try:
     print("Iniciando motor...")
     # El Timer se inicia AL FINAL de las preparaciones
     tim.init(freq=UPDATE_HZ, mode=Timer.PERIODIC, callback=motor_tick, hard=True)
+    
 
     while True:
         i2c.readfrom_mem_into(ADDR, STATUS, i2c_buf)
@@ -116,6 +121,7 @@ try:
         md_prev = md
         
         #fotodiodo
+        times[idx_adc] = time.ticks_diff(time.ticks_us(),t0)
         data_adc[idx_adc] = fotodiodo.read_u16()
         
         idx_adc += 1
@@ -136,17 +142,22 @@ finally:
     pwm_v.duty_u16(0)
     pwm_w.duty_u16(0)
     print("Sistema apagado. Pulsos totales:", count)
-    # Al final puedes ver los periodos guardados
-    print(periodos)
-    print('.....')
     
-    VREF = 3.235
-
-    n = min(idx_adc, len(data_adc))
-
-    print("ADC_V = [", end="")
-    for i in range(n):
-        v = data_adc[i] * VREF / 65535
-        print("{:.5f}".format(v), end="")
-        if i < n - 1:
-            print(", ", end="")
+    # Al final puedes ver los periodos guardados
+    
+    print('Periodos: ',periodos)
+    print('\n')
+    
+    print('Times: ', times)
+    print('\n')
+    
+    print('ADC raw: ',data_adc)
+    
+    print(len(data_adc),len(times))
+            
+            
+            
+            
+            
+            
+            
