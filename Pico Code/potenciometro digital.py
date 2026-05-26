@@ -6,9 +6,9 @@ inc = Pin(14,Pin.OUT)
 ud = Pin(13,Pin.OUT)
 
 
-cs.value(0)
+cs.value(1)
 inc.value(1)
-ud.value(0)
+ud.value(1)
 
 
 while True:

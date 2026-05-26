@@ -25,7 +25,7 @@ void setup() {
 
   Wire.setSDA(SDA_PIN);
   Wire.setSCL(SCL_PIN);
-  Wire.begin();
+  Wire.begin(); 
 
   driver.voltage_power_supply = 12; //aviso el voltaje para que se escalen las señales PWM
   driver.init(); //preparo el hardware
