@@ -1,14 +1,14 @@
 from machine import Pin, I2C
 from time import sleep
 
-i2c = I2C(0,sda = Pin(4),scl = Pin(5),freq = 10000)
+i2c = I2C(0,sda = Pin(0),scl = Pin(1),freq = 10000)
 print('Devices found : ',i2c.scan())
 
 sda = Pin(2,Pin.IN,Pin.PULL_UP)
 scl = Pin(3,Pin.IN,Pin.PULL_UP)
 
-ADDR = 0x36
-STATUS = 0x0B
+    ADDR = 0x36
+    STATUS = 0x0B
 
 # Angle regystry
 ANGLE_H = 0x0E

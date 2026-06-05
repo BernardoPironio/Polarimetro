@@ -1,14 +1,17 @@
 from x9cxxx import X9Cxxx
 from time import sleep
+from machine import Pin, ADC
 
 # Pines según tu conexión:
 # GP14 -> INC
 # GP13 -> U/D
 # GP15 -> CS
 
+fot = ADC(0)
+
 pot = X9Cxxx(inc_pin=14, ud_pin=13, cs_pin=15)
 
 
-pot.set(50)
+pot.set(0)
 position = pot.get()
 print(position)
