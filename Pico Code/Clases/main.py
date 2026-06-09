@@ -1,14 +1,27 @@
 from measurment_class import Medicion
+from x9cxxx import X9Cxxx
 
-m = Medicion(resistencia = 99)
+pot = X9Cxxx(
+    inc_pin=14,
+    ud_pin=13,
+    cs_pin=15
+)
 
-resistencia = m.calibrar_resistencia()
+pot.set(0)
 
-m = Medicion(resistencia = resistencia)
+m = Medicion()
 
-try:
-    datos = m.medir(vueltas = 16, muestras_por_vuelta = 600)
-    m.guardar_csv(datos)
-except:
-    print('Probablemente se quedo sin memoria, reduzca las muetstras por vuelta o las vueltas')
+resultado = m.calibrar(
+    delta=0.08,
+    vueltas=3
+)
 
+if not resultado["satura"]:
+
+    m.medir_continuo()
+
+else:
+
+    print(
+        "No se encontró posición válida."
+    )
