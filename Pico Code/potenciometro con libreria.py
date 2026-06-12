@@ -12,6 +12,6 @@ fot = ADC(0)
 pot = X9Cxxx(inc_pin=14, ud_pin=13, cs_pin=15)
 
 
-pot.set(0)
+pot.set(99)
 position = pot.get()
 print(position)

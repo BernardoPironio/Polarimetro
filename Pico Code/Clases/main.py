@@ -11,17 +11,6 @@ pot.set(0)
 
 m = Medicion()
 
-resultado = m.calibrar(
-    delta=0.08,
-    vueltas=3
-)
 
-if not resultado["satura"]:
+m.medir_continuo()
 
-    m.medir_continuo()
-
-else:
-
-    print(
-        "No se encontró posición válida."
-    )
