@@ -269,7 +269,7 @@ def fit_una_vuelta_angulo(theta, I):
 # CONFIG
 # =========================================================
 
-R = 2
+R = 3
 
 theta_common = np.linspace(
     0,
@@ -281,7 +281,7 @@ theta_common = np.linspace(
 # GUARDAR MEDICIONES
 # =========================================================
 
-carpeta_mediciones = "mediciones_continuo"
+carpeta_mediciones = "mediciones_337.5"
 os.makedirs(carpeta_mediciones, exist_ok=True)
 
 # =========================================================

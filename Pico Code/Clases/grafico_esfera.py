@@ -242,7 +242,7 @@ def fit_una_vuelta_angulo(theta, I):
 # CONFIG
 # =========================================================
 
-R = 25
+R = 1
 
 theta_common = np.linspace(
     0,
