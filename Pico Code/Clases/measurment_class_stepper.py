@@ -69,14 +69,19 @@ class Medicion:
     # ── Medición continua sin límite de vueltas ──────────────────────────
     def medir_continuo(self):
 
-        md_prev  = 0
+        md_prev = 0
         t_inicio = None
-        t_ref    = time.ticks_us()
-        vuelta   = 0
+
+        vuelta = 0
+
+        tiempos = []
+        voltajes = []
 
         while True:
 
             try:
+
+                ahora = time.ticks_us()
 
                 s = self.i2c.readfrom_mem(
                     self.ADDR,
@@ -86,9 +91,8 @@ class Medicion:
 
                 md = (s >> 5) & 1
 
+                # Inicio de una nueva vuelta
                 if md == 1 and md_prev == 0:
-
-                    ahora = time.ticks_us()
 
                     if t_inicio is not None:
 
@@ -98,28 +102,38 @@ class Medicion:
                         ) // 1000
 
                         if dt > 5:
+
+                            # Enviar todas las muestras de la vuelta
+                            if len(tiempos) > 0:
+
+                                t0 = tiempos[0]
+
+                                for tt, vv in zip(tiempos, voltajes):
+
+                                    print("{},{},{}".format(
+                                        tt - t0,
+                                        vv,
+                                        vuelta
+                                    ))
+
                             vuelta += 1
+
+                            tiempos = []
+                            voltajes = []
 
                     t_inicio = ahora
 
                 md_prev = md
 
-                volt = self.fot.read_u16() * 3.3 / 65535
+                tiempos.append(ahora)
 
-                t = time.ticks_diff(
-                    time.ticks_us(),
-                    t_ref
+                voltajes.append(
+                    self.fot.read_u16() * 3.3 / 65535
                 )
 
-                print("{},{},{}".format(
-                    t,
-                    volt,
-                    vuelta
-                ))
-
             except OSError:
-                time.sleep_ms(100)
 
+                time.sleep_ms(10)
 
     # ── Guardar resultado en CSV ─────────────────────────────────────────
     def guardar_csv(self, datos, archivo="datos.csv"):

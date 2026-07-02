@@ -1,6 +1,8 @@
 import serial
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
+import os
 
 from scipy.optimize import least_squares
 
@@ -276,6 +278,13 @@ theta_common = np.linspace(
 )
 
 # =========================================================
+# GUARDAR MEDICIONES
+# =========================================================
+
+carpeta_mediciones = "mediciones_continuo"
+os.makedirs(carpeta_mediciones, exist_ok=True)
+
+# =========================================================
 # SERIAL
 # =========================================================
 
@@ -468,6 +477,39 @@ while True:
                     I_all,
                     axis=0
                 )
+
+
+                # =========================================
+                # GUARDAR DATOS CRUDOS DEL SERIAL
+                # =========================================
+
+                inicio = bloque_actual * R
+                fin = (bloque_actual + 1) * R - 1
+
+                datos_bloque = []
+
+                for vuelta in lista:
+
+                    mask = (vueltas_np == vuelta)
+
+                    t_tmp = time_np[mask]
+                    v_tmp = voltaje_np[mask]
+
+                    for tt, vv in zip(t_tmp, v_tmp):
+                        datos_bloque.append({
+                            "vuelta": int(vuelta),
+                            "tiempo_us": float(tt),
+                            "voltaje_V": float(vv)
+                        })
+
+                df = pd.DataFrame(datos_bloque)
+
+                nombre_csv = os.path.join(
+                    carpeta_mediciones,
+                    f"bloque_{inicio:04d}_{fin:04d}.csv"
+                )
+
+                df.to_csv(nombre_csv, index=False)
 
                 # =========================================
                 # AJUSTE

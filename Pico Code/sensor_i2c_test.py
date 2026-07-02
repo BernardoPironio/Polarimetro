@@ -7,8 +7,8 @@ print('Devices found : ',i2c.scan())
 sda = Pin(2,Pin.IN,Pin.PULL_UP)
 scl = Pin(3,Pin.IN,Pin.PULL_UP)
 
-    ADDR = 0x36
-    STATUS = 0x0B
+ADDR = 0x36
+STATUS = 0x0B
 
 # Angle regystry
 ANGLE_H = 0x0E

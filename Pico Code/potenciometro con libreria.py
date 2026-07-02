@@ -1,11 +1,16 @@
 from x9cxxx import X9Cxxx
 from time import sleep
-from machine import Pin, ADC
+from machine import Pin, ADC, PWM
 
 # Pines según tu conexión:
 # GP14 -> INC
 # GP13 -> U/D
 # GP15 -> CS
+
+motor = PWM(Pin(2))
+motor.freq(25000)
+motor.duty_u16(32768)
+
 
 fot = ADC(0)
 

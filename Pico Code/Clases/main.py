@@ -13,4 +13,3 @@ m = Medicion()
 
 
 m.medir_continuo()
-
