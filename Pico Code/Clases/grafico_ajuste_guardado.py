@@ -281,7 +281,7 @@ theta_common = np.linspace(
 # GUARDAR MEDICIONES
 # =========================================================
 
-carpeta_mediciones = "mediciones_337.5"
+carpeta_mediciones = "med2_m45_terintento"
 os.makedirs(carpeta_mediciones, exist_ok=True)
 
 # =========================================================
@@ -289,7 +289,7 @@ os.makedirs(carpeta_mediciones, exist_ok=True)
 # =========================================================
 
 ser = serial.Serial(
-    "COM7",
+    "COM9",
     115200,
     timeout=1
 )

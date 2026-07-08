@@ -280,7 +280,7 @@ theta_common = np.linspace(
 # =========================================================
 
 ser = serial.Serial(
-    "COM7",
+    "COM9",
     115200,
     timeout=1
 )
