@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.6)  19 MAY 2026 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.6)  7 JUL 2026 23:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -779,14 +779,14 @@ Package caption Info: End \AtBeginDocument code.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
 * v-part:(T,H,B)=(28.45274pt, 731.23584pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
+* \textwidth=540.60239pt
 * \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-80.81725pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -821,21 +821,23 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Informe.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Informe.bbl' not found.
-
-No file Informe.bbl.
+Package biblatex Info: ... file 'Informe.bbl' found.
+ (c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.bbl)
 Package biblatex Info: Reference section=0 on input line 37.
 Package biblatex Info: Reference segment=0 on input line 37.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
-(C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Overfull \vbox (29.56787pt too high) has occurred while \output is active []
 
-{C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.aux
+ [1
+
+{C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -845,23 +847,23 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 1F6D90967BB4A2C10625312A381EE7B1;788.
 Package logreq Info: Writing requests to 'Informe.run.xml'.
 \openout1 = `Informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22939 strings out of 474486
- 399213 string characters out of 5743756
- 1929542 words of memory out of 5000000
- 44935 multiletter control sequences out of 15000+600000
- 568896 words of font info for 63 fonts, out of 8000000 for 9000
+ 22979 strings out of 474486
+ 399939 string characters out of 5743756
+ 1959542 words of memory out of 5000000
+ 44964 multiletter control sequences out of 15000+600000
+ 572455 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,81p,723b,1836s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.pdf (1 page, 57072 bytes).
+ 75i,8n,81p,737b,1840s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.pdf (2 pages, 162177 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

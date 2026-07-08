@@ -17,7 +17,7 @@
 \usepackage[export]{adjustbox}
 
 \usepackage{multicol}
-\usepackage[a4paper, left=20mm, right=20mm, top=10mm, bottom=30mm]{geometry}
+\usepackage[a4paper, left=10mm, right=10mm, top=10mm, bottom=30mm]{geometry}
 
 \usepackage{verbatim}
 \usepackage{appendix}
@@ -38,7 +38,7 @@
 
 \begin{center}		
 \vspace{1cm}
-\textsc{\LARGE{Construcción de polarímetro dinámico\\}}
+\textsc{\LARGE{Medición dinámica de la polarización de la luz\\}}
 \vspace{.5cm}
 { \large \bfseries Grupo 13\\}
 \vspace{0.2cm}
@@ -53,8 +53,87 @@ Departamento de Física, FCEyN, UBA\\}
 \vspace{0.5cm}
 
 \begin{abstract}
-
+MARTU SI VES ESTO LEE ESTO: Todo lo que hice aca es una version inicial para ir teniendo en cuenta lo que tenemos que poner en el infrome, sentite libre de modificar, borrar o agregar lo que quieras. Hay cosas que mismo a mi no me gustan(por ej separar intro de marco teorico), pero que dejo asi para poder organizar mejor las ideas. No te estrese si algo de lo que hice no te gusta, borralo o cambialo sin problma, y si tenes algun comentario en general para encara el informe, por ejemplo "a mi me gusta escirbir en presete" avisame por wpp y ya trato de escirbir asi. Pd: Seguro hay 300 tiempos verbales y errores en lo que escribi pero voy a ir acomodando
 \end{abstract}
 \end{center}
+
+\begin{multicols}{2}
+
+\section{Introducción}
+En la fisica cuantica, particularmente la optica cuantica, el estado de polarizacion de la luz es un recurso fundamental. 
+
+Uno ejemplo de esto es cuando se desea guardar infromacion en la polarizacion de los fotones, ya que es un grado de libertad que se puede medir y manipular de forma relativamente sencilla.
+Otro ejemplo, mas relacionado con el area de investigacion del LIAF,aparece en la medicion de resonancias oscuras en los iones, donde un estado de polarizacion inestable porovocaria que los valles de la señal de fluoresencia no sean tan distinguibles como se requiere para la medicion de resonancia.
+
+Para poder medir y tener control sobre la polarizacion es indispensable contar con un polarimetro dinamico, que permita medir el estado de polarizacion de la luz en tiempo real y de forma automatizada. El objetivo de este infrorme es descirbir el diseño e implementacion de este dispositivo, constituido por una lamina de cuarto de onda y un polarizador lineal. 
+
+\section{Marco teórico}
+Una de las formas de describir el estado de polarizacion de la luz es a partir de los parametros de Stokes. Estos cuatro parametros $S_0$, $S_1$, $S_2$ y $S_3$ nos indican la intesidad de la luz, la diferencia de intensidades entre luz polarizada horizontal y vertical, la diferencia de intensidades entre luz polarizada a $45^\circ$ y $-45^\circ$ y la diferencia de intensidades entre luz polarizada circularmente a derecha e izquierda, respectivamente. Estos parametros luego nos definen al vector de Stokes,
+
+\begin{equation*}
+\vec{S} = \begin{pmatrix}
+s_1 \\
+s_2 \\
+s_3 
+\end{pmatrix}
+\end{equation*}
+
+, donde $s_i = S_i/S_0$. Este vector nos permite representar el estado de polarizacion de la luz en la esfera de Poincaré, tal que los polos representan la polarizacion circular y el ecuador representa la polarizacion lineal. Ademas es posible definir el grado de polarizacion como ,
+\begin{equation*}
+    DOP = \frac{\sqrt{s_1^2 + s_2^2 + s_3^2}}{s_0}
+\end{equation*}
+
+
+Si se considera una polarizacion incidente descrita por $S_{in}$ y las matrices de Muller de la lamina de cuarto de onda(rotada un angulo $\theta$) y del polarizador lineal(asuimiendo que el eje de transmision del polarizador esta alineado con el eje horizontal) como $M_{QWP}(\theta)$\ref{matriz_qwp} y $M_{LP}$\ref{matriz_lp} respectivamente, se puede obtiene la polarizacion de salida a partir de la siguiente ecuacion:
+
+\begin{equation*}
+    S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in}
+\end{equation*}
+
+, con la cual se calcula la intensidad de salida, llegando a la expresion,
+
+\begin{equation}
+    I_{out} = \frac{S_0}{2} + \frac{S_1}{2}\cos^2(2\theta) + \frac{S_2}{2}\sin(4\theta) - \frac{S_3}{2}\sin(2\theta)
+\end{equation}
+
+donde podemos identificar los terminos como la intensidad promedio, la contribucion de la polarizacion lineal, la contribucion de la polarizacion diagonal y la contribucion de la polarizacion circular, respectivamente.
+
+Esta ecuacion se obtiene considerando las matrices de Muller de los elementos opticos ideales. En la practica, las matrices de Muller de los elementos opticos reales pueden diferir de las ideales, lo que afecta la polarizacion de la luz de salida. Por esta razon se agrag
+
+
+
+
+
+
+
+
+
+
+
+
+\end{multicols}
+
+\appendix
+
+\section{Matriz de Muller del polarizador lineal}\label{matriz_lp}
+\begin{equation*}
+M_{LP} = \frac{1}{2}\begin{pmatrix}
+1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{equation*}
+
+\section{Matriz de Muller de la lamina de cuarto de onda}\label{matriz_qwp}
+\begin{equation*}
+M_{QWP}(\theta) = \frac{1}{2}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos^2\theta & \sin2\theta \cos2\theta & -\sin2\theta \\
+0 & \sin2\theta \cos2\theta & \sin^2\theta & \cos2\theta \\
+0 & \sin2\theta & -\cos2\theta & 0
+\end{pmatrix}
+\end{equation*}
+
 
 \end{document}
