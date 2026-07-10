@@ -1,19 +1,20 @@
 # Fdb version 4
-["biber temp/Informe"] 1783722585.32438 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1783722595.29648 0
+["biber temp/Informe"] 0 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1783724849.16258 -1
   "referencias.bib" 1783721900 905 ce632b11f2b782d32ad7d89fa067d584 ""
-  "temp/Informe.bcf" 1783722594 107371 33339a70ddc8ec6b57b754ca51e8b819 "pdflatex"
+  "temp/Informe.bcf" 1783724848 107371 33339a70ddc8ec6b57b754ca51e8b819 "pdflatex"
   (generated)
   "temp/Informe.bbl"
   "temp/Informe.blg"
   (rewritten before read)
-["pdflatex"] 1783722593.35242 "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1783722595.29747 0
-  "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1779194135 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1783724846.49209 "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1783724849.16377 0
+  "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783723271 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1779194140 25420 d7ba985555f4d5d160bfbdff3c2b2ac8 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1783474410 28976 76289a40bd1a632cc02f39ef3cc70634 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1200.pk" 1779194146 31952 cacef9f880b946859a5f2b833fc2a08f ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1783471049 40136 5946cb9c2ab4f8ea4b1923e5c99d25b6 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/eccc1728.pk" 1779194148 45720 ff41b17f25a5d3655e3ba57eab919ada ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0700.pk" 1783474085 17000 f403654d28a527c26a44d04f29e398fe ""
+  "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm0900.pk" 1783724620 21356 9bf72d55e4017fd67b7bf1a6bb8aac9c ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1779213684 23808 e0917df265b4fa3608a2cf5f9ae11c28 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk" 1779194141 26228 7af7a34bf998b00bad7ed1b12595b363 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1200.pk" 1779194143 28440 fa4064f1c7d9e460788d66dd5c7c67d3 ""
@@ -28,6 +29,7 @@
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/eccc1095.tfm" 993061982 2800 704ac1d706443507d1542715b89923fc ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/eccc1728.tfm" 993061988 2792 f3ac583ec83a8d753d7145695a33f67d ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0700.tfm" 993062116 3168 c739b83da3134ef1007979877c1089cf ""
+  "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm0900.tfm" 993062120 3156 6d4f5755d77638125f6f89de4f3bb757 ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1000.tfm" 993062122 3148 7e594c8240c71e432203f65ab5f95a51 ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1095.tfm" 993062124 3172 eb6efaa83c6c52473a1c403f376eab0f ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1200.tfm" 993062126 3152 4850ff0163852b7fab34bd55e1197f28 ""
@@ -167,12 +169,12 @@
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/bpiro/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "Informe.tex" 1783722581 7593 2272df99cfe55f88feb48bca02d85445 ""
-  "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" 1783722581 7593 2272df99cfe55f88feb48bca02d85445 ""
-  "temp/Informe.aux" 1783722594 2202 e12a7b38d970f0c8db3a8f1675007f08 "pdflatex"
-  "temp/Informe.bbl" 1783722588 4765 e5dab57937de08192eaec78ff2c9f56d "biber temp/Informe"
-  "temp/Informe.out" 1783722594 1244 a5232cff435c393f7d4a95ff464ba635 "pdflatex"
-  "temp/Informe.run.xml" 1783722594 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
+  "Informe.tex" 1783724842 10658 9b80fbcf3d0788f3def0bff8475424b9 ""
+  "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" 1783724842 10658 9b80fbcf3d0788f3def0bff8475424b9 ""
+  "temp/Informe.aux" 1783724848 3111 41352190696bf067c15ae1355a3e5639 "pdflatex"
+  "temp/Informe.bbl" 1783724022 4765 e5dab57937de08192eaec78ff2c9f56d "biber temp/Informe"
+  "temp/Informe.out" 1783724848 2073 4c62a9623de35d3302538cae1176c2d2 "pdflatex"
+  "temp/Informe.run.xml" 1783724848 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
   (generated)
   "temp/Informe.aux"
   "temp/Informe.bcf"
