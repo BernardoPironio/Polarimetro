@@ -103,9 +103,87 @@ El polarímetro está constituido principalmente por un sistema óptico que cons
 \subsection{Sistema optico}
 Para la construcción del polarímetro se utiliza como referencia un láser de 630-660 nm, con una potencia menor a 5 mW. Se utiliza una lámina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. Para la medición de la intensidad de salida se utiliza un fotodiodo de silicio \cite{fotodiodo}. Para la alimentación del mismo se monta un circuito compuesto por un regulador de voltaje LM1117 \cite{regulador} de 3.3 V y un amplificador operacional LM324N \cite{amplificador_operacional} para convertir la corriente del fotodiodo en un voltaje proporcional a la intensidad de luz incidente. Además, se utiliza un potenciómetro digital \cite{potenciometro} para ajustar la ganancia del amplificador y así maximizar el voltaje medido sin permitir que la señal se sature. El circuito completo se muestra en la figura \ref{fig:circuito} en el apéndice. 
 
+\section{Análisis de resulados: Vectores de Poincairé}
+
+Para modelar la intensidad medida en función del ángulo $\theta$, se utilizó un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular.
+
+El retardo se definió de manera seccional como
+
+\[
+\delta(\theta)=
+\begin{cases}
+\delta_1, & 0 \leq \theta < \frac{\pi}{2} \\
+\delta_2, & \frac{\pi}{2} \leq \theta < \pi \\
+\delta_3, & \pi \leq \theta < \frac{3\pi}{2} \\
+\delta_4, & \frac{3\pi}{2} \leq \theta < 2\pi
+\end{cases}
+\]
+
+La intensidad modelada se escribió como
+
+\[
+I(\theta)=
+a_0
++a_2\sin(2\theta)
++a_{4c}\cos(4\theta)
++a_{4s}\sin(4\theta),
+\]
+
+donde los coeficientes están dados por
+
+\[
+a_0=\frac{S_0}{2}+\frac{S_1}{4}\left(1+\cos\delta\right),
+\]
+
+\[
+a_2=-\frac{S_3}{2}\sin\delta,
+\]
+
+\[
+a_{4c}=\frac{S_1}{4}\left(1-\cos\delta\right),
+\]
+
+\[
+a_{4s}=\frac{S_2}{4}\left(1-\cos\delta\right).
+\]
+
+\subsection{Análsis de múltiples curvas}
+
+Como un primer análisis, se estudió el comportamiento de las curvas obtenidas para varias vueltas de la lámina de onda. Se ajustó cada una de ellas, para un haz de una misma polarización y se calcularon los vectores de Poincaré para graficarlos y compararlos. En la Fig. se observa una comparación del caso de catorce vueltas obetnidas. Una gran proporción de los vectores se encuentran en un mismo sector de la esfera, descartando tres vectores que poseen una mayor lejanía respecto la distancia que poseen los otros entre sí. Esos casos fueron descartados para el análisis posterior.
+
+(imagen)
 
 
+\subsection{Doble Calibración}
 
+Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se optó por determinarlos a partir del ajuste simultáneo de dos curvas, aquella correspondida a una polarización horizontal y otra vertical. 
+
+Se ajustaron los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$), donde se definió $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
+
+Dado que siguen siendo muchos parámetros a ajustar, cuatro parametros de Stokes de cada curva y cuatro retrasos de la lámina, se decidió fijar uno de los retrasos al valor $\delta_1=1.57$ (rad).
+
+A partir de esto, en la Fig. \ref{fig:aj_doblecal}, se visualiza el ajuste realizado.
+
+Delimitando los valores de los retrasos y aquellos objetos que daban una vector de Poincaré de cada polarización con una norma mayor a 1 ($DOP≥1$), se obtuvieron los resultados de la Tabla \ref{}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+\hline
+$\delta$ & Valor (V) & Incerteza (rad) \\
+\hline
+$\delta__1$  & 1.57 & 0 \\
+$\delta_2$  & 1.5210 & 0.0147 \\
+$\delta_3$  & 1.5773 & 0.0079 \\
+$\delta_4$ & 1.4894  & 0.0145 \\
+\hline
+\end{tabular}
+\caption{Valores medidos de intensidad.}
+\label{tab:datos}
+\end{table}
+
+
+\subsection{Barrido de polarizaciones}
 
 
 
