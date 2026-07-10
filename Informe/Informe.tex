@@ -63,9 +63,9 @@ MARTU SI VES ESTO LEE ESTO: Todo lo que hice aca es una version inicial para ir 
 En la fisica cuantica, particularmente la optica cuantica, el estado de polarizacion de la luz es un recurso fundamental. 
 
 Uno ejemplo de esto es cuando se desea guardar infromacion en la polarizacion de los fotones, ya que es un grado de libertad que se puede medir y manipular de forma relativamente sencilla.
-Otro ejemplo, mas relacionado con el area de investigacion del LIAF,aparece en la medicion de resonancias oscuras en los iones, donde un estado de polarizacion inestable porovocaria que los valles de la señal de fluoresencia no sean tan distinguibles como se requiere para la medicion de resonancia.
+Otro ejemplo, más relacionado con el área de investigación del LIAF, aparece en la medición de resonancias oscuras de los iones, donde un estado de polarización inestable provocaría que los valles de la señal de fluorescencia no sean tan distinguibles como se requiere para la medición de resonancia.
 
-Para poder medir y tener control sobre la polarizacion es indispensable contar con un polarimetro dinamico, que permita medir el estado de polarizacion de la luz en tiempo real y de forma automatizada. El objetivo de este infrorme es descirbir el diseño e implementacion de este dispositivo, constituido por una lamina de cuarto de onda y un polarizador lineal. 
+Para poder medir y tener control sobre la polarizacion es indispensable contar con un polarimetro dinamico. Este instrumento permite medir el estado de polarizacion de la luz en tiempo real y de forma automatizada. El objetivo de este infrorme es descirbir el diseño e implementacion de este dispositivo.
 
 \section{Marco teórico}
 Una de las formas de describir el estado de polarizacion de la luz es a partir de los parametros de Stokes. Estos cuatro parametros $S_0$, $S_1$, $S_2$ y $S_3$ nos indican la intesidad de la luz, la diferencia de intensidades entre luz polarizada horizontal y vertical, la diferencia de intensidades entre luz polarizada a $45^\circ$ y $-45^\circ$ y la diferencia de intensidades entre luz polarizada circularmente a derecha e izquierda, respectivamente. Estos parametros luego nos definen al vector de Stokes,
@@ -84,7 +84,7 @@ s_3
 \end{equation*}
 
 
-Si se considera una polarizacion incidente descrita por $S_{in}$ y las matrices de Muller de la lamina de cuarto de onda(rotada un angulo $\theta$) y del polarizador lineal(asuimiendo que el eje de transmision del polarizador esta alineado con el eje horizontal) como $M_{QWP}(\theta)$\ref{matriz_qwp} y $M_{LP}$\ref{matriz_lp} respectivamente, se puede obtiene la polarizacion de salida a partir de la siguiente ecuacion:
+. Si se considera una polarizacion incidente descrita por $S_{in}$ y las matrices de Muller de una lamina de cuarto de onda(rotada un angulo $\theta$) y un polarizador lineal(asuimiendo que el eje de transmision del polarizador esta alineado con el eje horizontal) como $M_{QWP}(\theta) $\ref{matriz_qwp} y $M_{LP} $\ref{matriz_lp} respectivamente, se puede obtiene la polarizacion de salida a partir de la siguiente ecuacion:
 
 \begin{equation*}
     S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in}
@@ -92,15 +92,17 @@ Si se considera una polarizacion incidente descrita por $S_{in}$ y las matrices 
 
 , con la cual se calcula la intensidad de salida, llegando a la expresion,
 
-\begin{equation}
+\begin{equation}\label{ecuacion_intensidad}
     I_{out} = \frac{S_0}{2} + \frac{S_1}{2}\cos^2(2\theta) + \frac{S_2}{2}\sin(4\theta) - \frac{S_3}{2}\sin(2\theta)
 \end{equation}
 
 donde podemos identificar los terminos como la intensidad promedio, la contribucion de la polarizacion lineal, la contribucion de la polarizacion diagonal y la contribucion de la polarizacion circular, respectivamente.
 
-Esta ecuacion se obtiene considerando las matrices de Muller de los elementos opticos ideales. En la practica, las matrices de Muller de los elementos opticos reales pueden diferir de las ideales, lo que afecta la polarizacion de la luz de salida. Por esta razon se agrag
+\section{Armado del polarímetro}
+El polarimetro esta constituido principalmente por un sistema optico que consiste en una lamina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lamina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que tambien se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior analisis.
 
-
+\subsection{Sistema optico}
+Para la construccion del polarimetro utilizamos como referencia un laser de 630-660 nm, con una potencia menor a 5 mW. Se utilizo una lamina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. 
 
 
 
