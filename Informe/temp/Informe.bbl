@@ -16,5 +16,100 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{fotodiodo}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=420519e6cc2adf5a1accee8c41800478}{%
+           family={Siliconix},
+           familyi={S\bibinitperiod},
+           given={Vishay},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{420519e6cc2adf5a1accee8c41800478}
+      \strng{fullhash}{420519e6cc2adf5a1accee8c41800478}
+      \strng{bibnamehash}{420519e6cc2adf5a1accee8c41800478}
+      \strng{authorbibnamehash}{420519e6cc2adf5a1accee8c41800478}
+      \strng{authornamehash}{420519e6cc2adf5a1accee8c41800478}
+      \strng{authorfullhash}{420519e6cc2adf5a1accee8c41800478}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alldatasheet.es/datasheet-pdf/pdf/26250/VISHAY/BPW24R.html}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{BPW24R Datasheet}
+    \endentry
+    \entry{regulador}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=18f5e0836a6c13241992bc972af0890e}{%
+           family={Corp.},
+           familyi={C\bibinitperiod},
+           given={Cystech\bibnamedelima Electronics},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{18f5e0836a6c13241992bc972af0890e}
+      \strng{fullhash}{18f5e0836a6c13241992bc972af0890e}
+      \strng{bibnamehash}{18f5e0836a6c13241992bc972af0890e}
+      \strng{authorbibnamehash}{18f5e0836a6c13241992bc972af0890e}
+      \strng{authornamehash}{18f5e0836a6c13241992bc972af0890e}
+      \strng{authorfullhash}{18f5e0836a6c13241992bc972af0890e}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alldatasheet.com/datasheet-pdf/pdf/141837/CYSTEKEC/LM1117-3.3.html}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{LM1117-3.3 Datasheet}
+    \endentry
+    \entry{amplificador_operacional}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=bdd95750033c6d1e71751acaf3c3d8de}{%
+           family={Semiconductors},
+           familyi={S\bibinitperiod},
+           given={NXP},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \strng{fullhash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \strng{bibnamehash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \strng{authorbibnamehash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \strng{authornamehash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \strng{authorfullhash}{bdd95750033c6d1e71751acaf3c3d8de}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alldatasheet.com/datasheet-pdf/pdf/17880/PHILIPS/LM324N.html}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{LM324N Datasheet}
+    \endentry
+    \entry{potenciometro}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1d32ff410f8ab81bc0f05cc556a8c9b3}{%
+           family={Corp.},
+           familyi={C\bibinitperiod},
+           given={Renesas\bibnamedelima Technology},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \strng{namehash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \strng{fullhash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \strng{bibnamehash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \strng{authorbibnamehash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \strng{authornamehash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \strng{authorfullhash}{1d32ff410f8ab81bc0f05cc556a8c9b3}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alldatasheet.com/view.jsp?Searchword=X9C102P}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{X9C102P Datasheet}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

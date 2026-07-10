@@ -25,7 +25,7 @@
 
 \usepackage{csquotes}
 \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
-\addbibresource{references.bib}
+\addbibresource{referencias.bib}
 
 %\usepackage{svg}
 %\usepackage{circuitikz}
@@ -60,15 +60,14 @@ MARTU SI VES ESTO LEE ESTO: Todo lo que hice aca es una version inicial para ir 
 \begin{multicols}{2}
 
 \section{Introducción}
-En la fisica cuantica, particularmente la optica cuantica, el estado de polarizacion de la luz es un recurso fundamental. 
+En la física cuántica, particularmente la óptica cuántica, el estado de polarización de la luz es un recurso fundamental. 
 
-Uno ejemplo de esto es cuando se desea guardar infromacion en la polarizacion de los fotones, ya que es un grado de libertad que se puede medir y manipular de forma relativamente sencilla.
-Otro ejemplo, más relacionado con el área de investigación del LIAF, aparece en la medición de resonancias oscuras de los iones, donde un estado de polarización inestable provocaría que los valles de la señal de fluorescencia no sean tan distinguibles como se requiere para la medición de resonancia.
+Uno ejemplo de esto es cuando se desea guardar información en la polarización de los fotones, ya que es un grado de libertad que se puede medir y manipular de forma relativamente sencilla. Otro ejemplo, relacionado con el área de investigación del LIAF, aparece en la medición de resonancias oscuras de los iones, donde un estado de polarización inestable provocaría que los valles de la señal de fluorescencia no sean tan distinguibles como se requiere para la medición de resonancia.
 
-Para poder medir y tener control sobre la polarizacion es indispensable contar con un polarimetro dinamico. Este instrumento permite medir el estado de polarizacion de la luz en tiempo real y de forma automatizada. El objetivo de este infrorme es descirbir el diseño e implementacion de este dispositivo.
+Para poder medir y tener control sobre la polarización es indispensable contar con un polarímetro dinámico. Este instrumento permite medir el estado de polarización de la luz en tiempo real y de forma automatizada. El objetivo de este informe es describir el diseño e implementación de este dispositivo.
 
 \section{Marco teórico}
-Una de las formas de describir el estado de polarizacion de la luz es a partir de los parametros de Stokes. Estos cuatro parametros $S_0$, $S_1$, $S_2$ y $S_3$ nos indican la intesidad de la luz, la diferencia de intensidades entre luz polarizada horizontal y vertical, la diferencia de intensidades entre luz polarizada a $45^\circ$ y $-45^\circ$ y la diferencia de intensidades entre luz polarizada circularmente a derecha e izquierda, respectivamente. Estos parametros luego nos definen al vector de Stokes,
+Una de las formas de describir el estado de polarización de la luz es a partir de los parámetros de Stokes. Estos cuatro parámetros $S_0$, $S_1$, $S_2$ y $S_3$ nos indican la intensidad de la luz, la diferencia de intensidades entre luz polarizada horizontal y vertical, la diferencia de intensidades entre luz polarizada a $45^\circ$ y $-45^\circ$ y la diferencia de intensidades entre luz polarizada circularmente a derecha e izquierda, respectivamente. Estos parámetros luego nos definen al vector de Stokes,
 
 \begin{equation*}
 \vec{S} = \begin{pmatrix}
@@ -78,31 +77,32 @@ s_3
 \end{pmatrix}
 \end{equation*}
 
-, donde $s_i = S_i/S_0$. Este vector nos permite representar el estado de polarizacion de la luz en la esfera de Poincaré, tal que los polos representan la polarizacion circular y el ecuador representa la polarizacion lineal. Ademas es posible definir el grado de polarizacion como ,
+, donde $s_i = S_i/S_0$. Este vector nos permite representar el estado de polarización de la luz en la esfera de Poincaré, tal que los polos representan la polarización circular y el ecuador representa la polarización lineal. Además, es posible definir el grado de polarización como,
 \begin{equation*}
     DOP = \frac{\sqrt{s_1^2 + s_2^2 + s_3^2}}{s_0}
 \end{equation*}
 
 
-. Si se considera una polarizacion incidente descrita por $S_{in}$ y las matrices de Muller de una lamina de cuarto de onda(rotada un angulo $\theta$) y un polarizador lineal(asuimiendo que el eje de transmision del polarizador esta alineado con el eje horizontal) como $M_{QWP}(\theta) $\ref{matriz_qwp} y $M_{LP} $\ref{matriz_lp} respectivamente, se puede obtiene la polarizacion de salida a partir de la siguiente ecuacion:
+. Si se considera una polarización incidente descrita por $S_{in}$ y las matrices de Muller de una lámina de cuarto de onda(rotada un ángulo $\theta$) y un polarizador lineal(asumiendo que el eje de transmisión del polarizador está alineado con el eje horizontal) como $M_{QWP}(\theta)$ \ref{apendice: apendice: matriz_qwp} y $M_{LP} $ \ref{apendice: matriz_lp} respectivamente, se puede obtener la polarización de salida a partir de la siguiente ecuación:
 
 \begin{equation*}
     S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in}
 \end{equation*}
 
-, con la cual se calcula la intensidad de salida, llegando a la expresion,
+, con la cual se calcula la intensidad de salida, llegando a la expresión,
 
-\begin{equation}\label{ecuacion_intensidad}
+\begin{equation}\label{ecuacion: ecuacion_intensidad}
     I_{out} = \frac{S_0}{2} + \frac{S_1}{2}\cos^2(2\theta) + \frac{S_2}{2}\sin(4\theta) - \frac{S_3}{2}\sin(2\theta)
 \end{equation}
 
-donde podemos identificar los terminos como la intensidad promedio, la contribucion de la polarizacion lineal, la contribucion de la polarizacion diagonal y la contribucion de la polarizacion circular, respectivamente.
+Donde podemos identificar los términos como la intensidad promedio, la contribución de la polarización lineal, la contribución de la polarización diagonal y la contribución de la polarización circular, respectivamente.
 
 \section{Armado del polarímetro}
-El polarimetro esta constituido principalmente por un sistema optico que consiste en una lamina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lamina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que tambien se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior analisis.
+El polarímetro está constituido principalmente por un sistema óptico que consiste en una lámina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lámina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que también se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior análisis.
 
 \subsection{Sistema optico}
-Para la construccion del polarimetro utilizamos como referencia un laser de 630-660 nm, con una potencia menor a 5 mW. Se utilizo una lamina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. 
+Para la construcción del polarímetro se utiliza como referencia un láser de 630-660 nm, con una potencia menor a 5 mW. Se utiliza una lámina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. Para la medición de la intensidad de salida se utiliza un fotodiodo de silicio \cite{fotodiodo}. Para la alimentación del mismo se monta un circuito compuesto por un regulador de voltaje LM1117 \cite{regulador} de 3.3 V y un amplificador operacional LM324N \cite{amplificador_operacional} para convertir la corriente del fotodiodo en un voltaje proporcional a la intensidad de luz incidente. Además, se utiliza un potenciómetro digital \cite{potenciometro} para ajustar la ganancia del amplificador y así maximizar el voltaje medido sin permitir que la señal se sature. El circuito completo se muestra en la figura \ref{fig:circuito} en el apéndice. 
+
 
 
 
@@ -115,9 +115,11 @@ Para la construccion del polarimetro utilizamos como referencia un laser de 630-
 
 \end{multicols}
 
+\printbibliography
+
 \appendix
 
-\section{Matriz de Muller del polarizador lineal}\label{matriz_lp}
+\section{Matriz de Muller del polarizador lineal}\label{apendice: matriz_lp}
 \begin{equation*}
 M_{LP} = \frac{1}{2}\begin{pmatrix}
 1 & 1 & 0 & 0 \\
@@ -127,7 +129,7 @@ M_{LP} = \frac{1}{2}\begin{pmatrix}
 \end{pmatrix}
 \end{equation*}
 
-\section{Matriz de Muller de la lamina de cuarto de onda}\label{matriz_qwp}
+\section{Matriz de Muller de la lamina de cuarto de onda}\label{apendice: matriz_qwp}
 \begin{equation*}
 M_{QWP}(\theta) = \frac{1}{2}\begin{pmatrix}
 1 & 0 & 0 & 0 \\
@@ -136,6 +138,11 @@ M_{QWP}(\theta) = \frac{1}{2}\begin{pmatrix}
 0 & \sin2\theta & -\cos2\theta & 0
 \end{pmatrix}
 \end{equation*}
+
+\section{Circuito del fotodiodo}
+La figura muestra el circuito utilizado para alimentar el fotodiodo y convertir la corriente de salida en un voltaje proporcional a la intensidad de la luz. El circuito también cuenta con un potenciómetro digital para ajustar la ganancia.
+
+
 
 
 \end{document}
