@@ -98,7 +98,14 @@ s_3
 Donde podemos identificar los términos como la intensidad promedio, la contribución de la polarización lineal, la contribución de la polarización diagonal y la contribución de la polarización circular, respectivamente.
 
 \section{Armado del polarímetro}
-El polarímetro está constituido principalmente por un sistema óptico que consiste en una lámina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lámina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que también se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior análisis.
+El polarímetro está constituido principalmente por un sistema óptico que consiste en una lámina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lámina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que también se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior análisis. La lámina se monta al motor utilizando una carcaza impresa en 3D, además a  esta se le adhiere un imán que, junto a un encoder magnético, detecta el número de vueltas del motor. En la Figura \ref{fig: dispositivo_experimental} se observa un diagrama del dispositivo descrito.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.4\textwidth]{Figuras/Render dispositivo.png}
+    \caption{Diagrama del montaje del polarímetro. Se observa el montaje óptico que incluye el láser de referencia, la carcaza que contiene a la lámina y el imán encastrado, el encoder magnético, el polarizador lineal y el fotodiodo.}
+    \label{fig: dispositivo_experimental}
+\end{figure}
 
 \subsection{Sistema óptico}
 Para la construcción del polarímetro se utiliza como referencia un láser de 630-660 nm, con una potencia menor a 5 mW. Se utiliza una lámina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. Para la medición de la intensidad de salida se utiliza un fotodiodo de silicio \cite{fotodiodo}. Para la alimentación del mismo se monta un circuito, alimentado con una fuente externa, compuesto por un regulador de voltaje LM1117 \cite{regulador} de 3.3 V y un amplificador operacional LM324N \cite{amplificador_operacional} para convertir la corriente del fotodiodo en un voltaje proporcional a la intensidad de luz incidente. Además, se utiliza un potenciómetro digital \cite{potenciometro} para ajustar la ganancia del amplificador y así maximizar el voltaje medido sin permitir que la señal se sature. El circuito completo se muestra en la figura \ref{fig: circuito} en el apéndice \ref{apendice: circuito_fotodiodo}. La señal de salida del fotodiodo se adquiere mediante un microcontrolador Raspberry Pi Pico 2W \cite{raspberry_pi}, que se encarga de enviar los datos a una computadora y regular el valor del potenciómetro digital.
