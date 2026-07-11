@@ -1,0 +1,7 @@
+{"rule":"CLICK_CLIC","sentence":"^\\QPara controlar la velocidad del motor se utiliza el driver Brushless 3 Click \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPara controlar la velocidad del motor se utiliza el driver Brushless 3 Click \\E(?:Dummy|Ina|Jimmy-|Dummy-|Maniquí-|Maniquíes-|Atrapa-|Dummy\\+|Dummy's\\+)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEl encoder no se utiliza\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPara controlar el número de vueltas del motor se encastra un imán en la carcaza y se utiliza un encoder de efecto Hall a modo de TIC.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QEl encoder no se utiliza para medir la rotación del motor directamente, ya que para lograr esto es necesario que el imán esté perfectamente alineado con centro del motor y hacer esto bloquearía el eje por donde pasa el haz de luz.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QVectores de Poincairé.\\E$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QPara controlar el número de vueltas del motor se encastra un imán en la carcaza y se utiliza un encoder magnetico a modo de TIC.\\E$"}

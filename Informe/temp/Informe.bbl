@@ -109,6 +109,48 @@
       \field{note}{Accedido: 2024-06-10}
       \field{title}{X9C102P Datasheet}
     \endentry
+    \entry{raspberry_pi}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=03eb7fa9a11a8c6d79113b8a4ace0c93}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Raspberry\bibnamedelima Pi},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{fullhash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{bibnamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authorbibnamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authornamehash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \strng{authorfullhash}{03eb7fa9a11a8c6d79113b8a4ace0c93}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.raspberrypi.com/products/raspberry-pi-pico/}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{Raspberry Pi Pico}
+    \endentry
+    \entry{driver}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=524feb9f33e19587e975341941d0e3de}{%
+           family={MIKROE},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{524feb9f33e19587e975341941d0e3de}
+      \strng{fullhash}{524feb9f33e19587e975341941d0e3de}
+      \strng{bibnamehash}{524feb9f33e19587e975341941d0e3de}
+      \strng{authorbibnamehash}{524feb9f33e19587e975341941d0e3de}
+      \strng{authornamehash}{524feb9f33e19587e975341941d0e3de}
+      \strng{authorfullhash}{524feb9f33e19587e975341941d0e3de}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.mikroe.com/brushless-3-click?srsltid=AfmBOopd5Ca63S-pGemQ6CAHFPnvUmYO77ESzQUOtvTsLpmTR3OSRujP}}
+      \field{note}{Accedido: 2024-06-10}
+      \field{title}{Brushless 3 Click}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
