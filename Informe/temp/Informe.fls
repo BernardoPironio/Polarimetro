@@ -416,24 +416,51 @@ INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tf
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
-INPUT .\Figuras\Render dispositivo.png
+INPUT .\Figuras\dispositivo_experimental.pdf
+INPUT .\Figuras\dispositivo_experimental.pdf
+INPUT .\Figuras\dispositivo_experimental.pdf
+INPUT .\Figuras\dispositivo_experimental.pdf
+INPUT .\Figuras\dispositivo_experimental.pdf
+INPUT .\Figuras\dispositivo_experimental.pdf
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0900.tfm
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT .\Figuras\VistaGral.png
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\VistaplanoS1S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT .\Figuras\LateralS3S2.png
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm0900.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1095.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1095.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmtt.fd
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1095.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm0800.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmss.fd
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmss.fd
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex\latex\base\t1cmss.fd
@@ -452,12 +479,6 @@ INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
-INPUT C:\Users\bpiro\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.aux
 INPUT c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.out
 INPUT c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.out
@@ -465,14 +486,16 @@ INPUT c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.run.xml
 OUTPUT c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.run.xml
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecss1000.pk
-INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
-INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1095.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
+INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0900.pk
+INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm0900.pk
+INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
+INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0800.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0900.pk
 INPUT C:\Users\bpiro\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
