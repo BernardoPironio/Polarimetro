@@ -116,50 +116,52 @@ La lámina se monta sobre un motor 2204-260KV sin escobillas con el eje hueco, e
 
 Para modelar la intensidad medida en función del ángulo $\theta$, se utilizó un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular.
 
-El retardo se definió de manera seccional como
+\vspace{0.2cm}
 
-\begin{equation*}
-    \delta(\theta)=
-    \begin{cases}
-    \delta_1, & 0 \leq \theta < \frac{\pi}{2} \\
-    \delta_2, & \frac{\pi}{2} \leq \theta < \pi \\
-    \delta_3, & \pi \leq \theta < \frac{3\pi}{2} \\
-    \delta_4, & \frac{3\pi}{2} \leq \theta < 2\pi
-    \end{cases}    
-\end{equation*}
+\noindent El retardo se definió de manera seccional como
 
+\[
+\delta(\theta)=
+\begin{cases}
+\delta_1, & 0 \leq \theta < \frac{\pi}{2} \\
+\delta_2, & \frac{\pi}{2} \leq \theta < \pi \\
+\delta_3, & \pi \leq \theta < \frac{3\pi}{2} \\
+\delta_4, & \frac{3\pi}{2} \leq \theta < 2\pi
+\end{cases}
+\]
 
-La intensidad modelada se escribió como
+\noindent La intensidad modelada se escribió como
 
-\begin{equation*}
-    I(\theta)=
-    a_0
-    +a_2\sin(2\theta)
-    +a_{4c}\cos(4\theta)
-    +a_{4s}\sin(4\theta),
-\end{equation*}
+\[
+I(\theta)=
+a_0
++a_2\sin(2\theta)
++a_{4c}\cos(4\theta)
++a_{4s}\sin(4\theta),
+\]
 
-donde los coeficientes están dados por
+\noindent donde los coeficientes están dados por
 
-\begin{equation*}
-    a_0=\frac{S_0}{2}+\frac{S_1}{4}\left(1+\cos\delta\right),
-\end{equation*}
+\[
+a_0=\frac{S_0}{2}+\frac{S_1}{4}\left(1+\cos\delta\right),
+\]
 
-\begin{equation*}
-    a_2=-\frac{S_3}{2}\sin\delta,
-\end{equation*}
+\[
+a_2=-\frac{S_3}{2}\sin\delta,
+\]
 
-\begin{equation*}
-    a_{4c}=\frac{S_1}{4}\left(1-\cos\delta\right),
-\end{equation*}
+\[
+a_{4c}=\frac{S_1}{4}\left(1-\cos\delta\right),
+\]
 
-\begin{equation*}
-    a_{4s}=\frac{S_2}{4}\left(1-\cos\delta\right).
-\end{equation*}
+\[
+a_{4s}=\frac{S_2}{4}\left(1-\cos\delta\right).
+\]
+
 
 \subsection{Análisis de múltiples curvas}
 
-Como un primer análisis, se estudió el comportamiento de las curvas obtenidas para varias vueltas de la lámina de onda. Se ajustó cada una de ellas, para un haz de una misma polarización y se calcularon los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: tresimagenes} se observa una comparación para catorce vueltas distintas. Una gran proporción de los vectores se encuentran en un mismo sector de la esfera, descartando tres vectores que poseen una mayor lejanía respecto la distancia que poseen los otros entre sí. Esos casos fueron descartados para el análisis posterior.
+Como un primer análisis, se estudió el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de onda para un mismo estado de polarización del haz incidente. Se ajustó cada una de ellas, y a partir de los parámetros obtenidos, se calcularon los vectores de Poincaré para graficarlos y compararlos. En la Fig. \ref{fig:multcurvs} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
 
 \end{multicols}
 \begin{figure}[H]
@@ -187,22 +189,40 @@ Como un primer análisis, se estudió el comportamiento de las curvas obtenidas 
     \end{subfigure}
 
     \caption{Se disponen disferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0°:(a) Vista general de los vectores, (b) Vista en el plano de los versores $S_1$ y $S_2$, y (c) Vista en el plano de los versores $S_3$ y $S_2$}
-    \label{fig: tresimagenes}
+    \label{fig: multcurvs}
 \end{figure}
 
 \begin{multicols}{2}
+
+Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y distinguir si había alguna distribución aleatoria  lo cual sería indicador de algún error sistemático en el análisis o en la adquisición de datos. En este caso, los vectores presentan una tendencia de agruparse alrededor del vector promedio.
+%estimar algun tipo de error de theta 0??
 
 \subsection{Doble Calibración}
 
 Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se optó por determinarlos a partir del ajuste simultáneo de dos curvas, aquella correspondida a una polarización horizontal y otra vertical. 
 
-Se ajustaron los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$), donde se definió $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
+\vspace{0.3cm}
 
-Dado que siguen siendo muchos parámetros a ajustar, cuatro parametros de Stokes de cada curva y cuatro retrasos de la lámina, se decidió fijar uno de los retrasos al valor $\delta_1=1.57$ (rad).
+Se ajustaron los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se definió $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
+
+\noindent Dado que son doce parámetros a ajustar, cuatro parámetros de Stokes de cada curva y cuatro retrasos de la lámina, se decidió fijar uno de los retrasos al valor $\delta_1=1.57$ (rad). 
+
+%temanormalizacion
 
 A partir de esto, en la Fig. \ref{fig:aj_doblecal}, se visualiza el ajuste realizado.
 
-Delimitando los valores de los retrasos y aquellos objetos que daban una vector de Poincaré de cada polarización con una norma mayor a 1 ($DOP\leq 1$), se obtuvieron los resultados de la Tabla \ref{tabla: deltas}
+\end{multicols}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{Figuras/dobleaj.png}
+    \caption{Se disponen disferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0°:(a) Vista general de los vectores, (b) Vista en el plano de los versores $S_1$ y $S_2$, y (c) Vista en el plano de los versores $S_3$ y $S_2$}
+    \label{fig: multcurvs}
+\end{figure}
+
+\begin{multicols}{2}
+
+
+\noindent Delimitando los valores de los retrasos a un intervalo de $$[1.5, 1.65] \text{ rad}$ y descartando las curvas que daban un vector de Poincaré con una norma mayor a 1 ($\mathrm{DOP} \geq 1$), se obtuvieron los resultados de la Tabla \ref{tab:cal_deltas}.
 
 \begin{table}[H]
 \centering
@@ -217,12 +237,95 @@ $\delta_4$ & 1.4894  & 0.0145 \\
 \hline
 \end{tabular}
 \caption{Valores medidos de intensidad.}\label{tabla: deltas}
-\label{tab:datos}
+\label{tab:cal_deltas}
 \end{table}
+
+Para la polarización horizontal los parámetros de Stokes obtenidos fueron: $S_{0H}=0.776 \pm 0.006 $, $S_{1H}=(0.687\pm 0.007)$, $S_{2H}=(-0.360\pm 0.005)$ y $S_{3H}=(0.0018\pm 0.0019)$. Por otro lado, para la polarización vertical se obtuvo:  $S_{0V}=0.740 \pm 0.005 $, $S_{1V}=(-0.610\pm 0.006)$, $S_{2V}=(0.411\pm 0.005)$ y $S_{3V}=(-0.0811\pm 0.0018)$. Si bien el sistema experimental fue diseñado para que el haz incidente sea lineal, en los resultados se distingue que la coponente del $S_3$ no es nulo, aunque se lleva un orden de magnitud en el caso de la polarizzación vertical y hasta dos ordenes menos en el caso de la horizontal. Esto puede deberse a que el polarímetro que se encuentra a la salida del láser no sea ideal, y el láser al no ser lineal, evidencia que pudo haber sobrevivido alguna componente circular. 
+
+%paramegros de bondad de ajuste??
+
+\end{multicols}
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/esferacal_vistagral.png}
+        \caption{a}
+        \label{fig:a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/cal_S3S1.png}
+        \caption{b}
+        \label{fig:b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/cal_S2S1.png}
+        \caption{c}
+        \label{fig:c}
+    \end{subfigure}
+
+    \caption{Se disponen disferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0° y 45:(a) Vista general de los vectores, (b) Vista en el plano de los versores $S_1$ y $S_2$, y (c) Vista en el plano de los versores $S_3$ y $S_2$}
+    \label{fig: vistas_doblecal}
+\end{figure}
+
+\begin{multicols}{2}
+
+En la Fig.\ref{fig:vistas_doblecal}  se observa una representación de ambos vectores desde diferentes perspectivas. Dado que son dos polarización que se diferencian en una diferencia de fase de $\pi$, tienen que encontrarse en el extremo opuesto de la esfera y por ser configuraciones lineales, en el plano $S_1 $ y $S_2$.
+
+En el caso de Fig.\ref{fig:vistas_doblecal_lat2} nuevamente se distingue la presencia de la componente $S_3$. Sin embargo, en el plano $S_1 $ y $S_2$ de la Fig. \ref{fig:vistas_doblecal_lat1} se observa que estos vectores ocupan posiciones aproximadamente opuestas sobre la esfera de Poincaré. 
+
+%tienen uniddes , los presento asi? o como los vectores depoincare?
+%hablo de algun angulo de error dado que no son perfectamente opuestos?
+
+Estas visualizaciones permitieron tomar como calibración los ajustes realizados para analizar otras configuraciones.
 
 
 \subsection{Barrido de polarizaciones}
 
+Para analizar diversas polarizaciones lineales del haz, se fue rotando la lámina de media onda para rotar el eje de dicha polarización. Teniendo la calibración previamente realizada, se ajustó la curva de una vuelta de cada configuración pero fijando los cuatro retardos. En la Fig. \ref{fig:vistasgral_allconf} se observa una representación de cada uno de los vectores desde diferentes perspectivas. 
+
+\end{multicols}
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/vistagral_allconfig.png}
+        \caption{a}
+        \label{fig:a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/allcomf_lats2.png}
+        \caption{b}
+        \label{fig:b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.32\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/allcomf_lats3.png}
+        \caption{c}
+        \label{fig:c}
+    \end{subfigure}
+
+    \caption{Se disponen disferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0° y 45:(a) Vista general de los vectores, (b) Vista en el plano de los versores $S_1$ y $S_2$, y (c) Vista en el plano de los versores $S_3$ y $S_2$}
+    \label{fig:vistasgral_allconf}
+\end{figure}
+
+\begin{multicols}{2}
+
+Según el modelo teórico, las normas deberían de estar en la superficie de la esfera, dado que el haz se polarizó completamente con un polarizador lineal. Sin embargo, la Fig. \ref{fig:vistasgral_allconf_up} demuestra que hay algunos casos en los cuales no sucede. Además, en la Fig.  \ref{fig:vistasgral_allconf_lat} se observa la presencia de componentes en el versor $S_3$, como sucedió en el análisis de la calibración. De todas formas, los vectores están contenidos en mayor proporción en el plano $S_1$ y $S_2$.
+
+Estos resultados, demuestran que las mediciones tomadas poseen un comportamiento consistente con el modelo teórico, teniendo en cuenta de las imperfecciones que pueden deberse a considerar el haz como completamente polarizado de manera lineal.
+
+
+%digo a que me refiero con mayor proporcion?
 
 
 
