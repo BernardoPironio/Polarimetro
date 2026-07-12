@@ -159,8 +159,9 @@ donde los coeficientes están dados por
 
 \subsection{Análisis de múltiples curvas}
 
-Como un primer análisis, se estudió el comportamiento de las curvas obtenidas para varias vueltas de la lámina de onda. Se ajustó cada una de ellas, para un haz de una misma polarización y se calcularon los vectores de Poincaré para graficarlos y compararlos. En la Fig. se observa una comparación del caso de catorce vueltas obtenidas. Una gran proporción de los vectores se encuentran en un mismo sector de la esfera, descartando tres vectores que poseen una mayor lejanía respecto la distancia que poseen los otros entre sí. Esos casos fueron descartados para el análisis posterior.
+Como un primer análisis, se estudió el comportamiento de las curvas obtenidas para varias vueltas de la lámina de onda. Se ajustó cada una de ellas, para un haz de una misma polarización y se calcularon los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: tresimagenes} se observa una comparación para catorce vueltas distintas. Una gran proporción de los vectores se encuentran en un mismo sector de la esfera, descartando tres vectores que poseen una mayor lejanía respecto la distancia que poseen los otros entre sí. Esos casos fueron descartados para el análisis posterior.
 
+\end{multicols}
 \begin{figure}[H]
     \centering
 
@@ -186,9 +187,10 @@ Como un primer análisis, se estudió el comportamiento de las curvas obtenidas 
     \end{subfigure}
 
     \caption{Se disponen disferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0°:(a) Vista general de los vectores, (b) Vista en el plano de los versores $S_1$ y $S_2$, y (c) Vista en el plano de los versores $S_3$ y $S_2$}
-    \label{fig:tresimagenes}
+    \label{fig: tresimagenes}
 \end{figure}
 
+\begin{multicols}{2}
 
 \subsection{Doble Calibración}
 
@@ -252,6 +254,39 @@ M_{LP} = \frac{1}{2}\begin{pmatrix}
 0 & 0 & 0 & 0
 \end{pmatrix}
 \end{equation*}
+
+\section{Cálculo de la intensidad de salida}
+La siguiente ecuación detalla el cálculo de la intensidad de la luz de salida tras pasar por la lámina rotada y el polarizador línea.
+
+En general mencionamos que $S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in} = M_{LP} \cdot S'$, donde estamos definiendo $S' = M_{QWP}(\theta) \cdot S_{in}$. Calculando con la matriz de Muller de una lámina rotante notamos que: 
+
+\begin{equation*}
+\begin{cases}
+    S_0' = S_0 \\
+    S_1' = \cos^2 2\theta \cdot S_1 + \sin 2\theta \cos 2\theta \cdot S_2 - \sin 2\theta S_3 \\
+    S_2' = \sin 2\theta \cos 2\theta \cdot S_1 + \sin^2 2\theta \cdot S_2 + \cos 2\theta \cdot S_3 \\
+    S_3' = \sin 2\theta \cdot S_1 - \cos 2\theta \cdot S_2
+\end{cases}
+\end{equation*}
+
+Finalmente, si hacemos la cuenta $M_{LP} \cdot S'$, llegamos a que la intensidad es
+
+\begin{equation*}
+    I(\theta) = \frac{1}{2} (S_0' + S_1') = \frac{S_0}{2} + \frac{S_1}{2} \cos^2 2\theta + \frac{S_2}{2} \sin 2\theta \cos 2\theta - \frac{S_3}{2} \sin 2\theta
+\end{equation*}
+
+, donde luego de utilizar ciertas identidades trigonométricas,
+
+\begin{equation*}
+    I(\theta) = \frac{S_0}{2} + \frac{S_1}{4}(1 + \cos 4\theta) + \frac{S_2}{4} \sin 4\theta - \frac{S_3}{2} \sin 2\theta
+\end{equation*}
+
+
+
+
+
+    
+
 
 \section{Circuito del fotodiodo}\label{apendice: circuito_fotodiodo}
 La figura muestra el circuito utilizado para alimentar el fotodiodo y convertir la corriente de salida en un voltaje proporcional a la intensidad de la luz. El circuito también cuenta con un potenciómetro digital para ajustar la ganancia.

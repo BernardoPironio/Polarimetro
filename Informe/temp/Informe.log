@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.6)  12 JUL 2026 19:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.3.6)  12 JUL 2026 20:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1062,39 +1062,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Figuras/dispositivo_experimental.pdf, id=80, 845.04686pt x 597.50786pt>
+<Figuras/dispositivo_experimental.pdf, id=84, 845.04686pt x 597.50786pt>
 File: Figuras/dispositivo_experimental.pdf Graphic file (type pdf)
 <use Figuras/dispositivo_experimental.pdf>
 Package pdftex.def Info: Figuras/dispositivo_experimental.pdf  used on input line 103.
 (pdftex.def)             Requested size: 216.23764pt x 152.89584pt.
  [2 <./Figuras/dispositivo_experimental.pdf>]
-<Figuras/VistaGral.png, id=114, 403.2666pt x 442.2924pt>
+<Figuras/VistaGral.png, id=119, 403.2666pt x 442.2924pt>
 File: Figuras/VistaGral.png Graphic file (type png)
 <use Figuras/VistaGral.png>
-Package pdftex.def Info: Figuras/VistaGral.png  used on input line 169.
-(pdftex.def)             Requested size: 84.89832pt x 93.1136pt.
-<Figuras/VistaplanoS1S2.png, id=116, 403.2666pt x 431.4519pt>
+Package pdftex.def Info: Figuras/VistaGral.png  used on input line 170.
+(pdftex.def)             Requested size: 172.99672pt x 189.74335pt.
+<Figuras/VistaplanoS1S2.png, id=121, 403.2666pt x 431.4519pt>
 File: Figuras/VistaplanoS1S2.png Graphic file (type png)
 <use Figuras/VistaplanoS1S2.png>
-Package pdftex.def Info: Figuras/VistaplanoS1S2.png  used on input line 176.
-(pdftex.def)             Requested size: 84.89832pt x 90.8314pt.
-<Figuras/LateralS3S2.png, id=117, 403.2666pt x 431.4519pt>
+Package pdftex.def Info: Figuras/VistaplanoS1S2.png  used on input line 177.
+(pdftex.def)             Requested size: 172.99672pt x 185.09277pt.
+<Figuras/LateralS3S2.png, id=122, 403.2666pt x 431.4519pt>
 File: Figuras/LateralS3S2.png Graphic file (type png)
 <use Figuras/LateralS3S2.png>
-Package pdftex.def Info: Figuras/LateralS3S2.png  used on input line 183.
-(pdftex.def)             Requested size: 84.89832pt x 90.8314pt.
+Package pdftex.def Info: Figuras/LateralS3S2.png  used on input line 184.
+(pdftex.def)             Requested size: 172.99672pt x 185.09277pt.
 
 
-LaTeX Warning: Reference `fig:aj_doblecal' on page 3 undefined on input line 201.
+LaTeX Warning: Reference `fig:aj_doblecal' on page 3 undefined on input line 203.
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 232.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 234.
 (C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [3 <./Figuras/VistaGral.png> <./Figuras/VistaplanoS1S2.png> <./Figuras/LateralS3S2.png>]
-LaTeX Font Info:    Trying to load font information for T1+cmss on input line 272.
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 307.
  (C:\Users\bpiro\AppData\Local\Programs\MiKTeX\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [4] (c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.aux
+) [4] [5] (c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1108,23 +1108,23 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 0CB50D24381CBF6D5C7759DA8B04A799;2238.
+(rerunfilecheck)             Checksum: 7B429D8AEDDBB807638F2CFC69FD007A;2475.
 Package logreq Info: Writing requests to 'Informe.run.xml'.
 \openout1 = `Informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53040 strings out of 474486
- 1221039 string characters out of 5743756
- 2281591 words of memory out of 5000000
- 74704 multiletter control sequences out of 15000+600000
+ 53043 strings out of 474486
+ 1221076 string characters out of 5743756
+ 2274591 words of memory out of 5000000
+ 74705 multiletter control sequences out of 15000+600000
  582869 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,101p,1480b,1840s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\bpiro\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/bpiro/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.pdf (4 pages, 1252909 bytes).
+Output written on c:\Users\bpiro\Desktop\Polarimetro\Informe\temp\Informe.pdf (5 pages, 1256524 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 697 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
