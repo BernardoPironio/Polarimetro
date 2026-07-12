@@ -256,7 +256,28 @@ M_{LP} = \frac{1}{2}\begin{pmatrix}
 \end{equation*}
 
 \section{Cálculo de la intensidad de salida}
-La siguiente ecuación detalla el cálculo de la intensidad de la luz de salida tras pasar por la lámina rotada y el polarizador línea.
+La siguiente ecuación detalla el cálculo de la intensidad de la luz de salida tras pasar por la lámina rotada y el polarizador línea. Las matrices de Muller que representan a la lamina de cuarto de onda(rotada un angulo $\theta$) y un polarizador lineal(orientado horizontalmente) son 
+
+\begin{equation*}
+M_{QWP}(\theta) = \frac{1}{2}\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos^2\theta & \sin2\theta \cos2\theta & -\sin2\theta \\
+0 & \sin2\theta \cos2\theta & \sin^2\theta & \cos2\theta \\
+0 & \sin2\theta & -\cos2\theta & 0
+\end{pmatrix} 
+,
+M_{LP} = \frac{1}{2}\begin{pmatrix}
+1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{equation*}
+
+
+, respectivamente.
+
+
 
 En general mencionamos que $S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in} = M_{LP} \cdot S'$, donde estamos definiendo $S' = M_{QWP}(\theta) \cdot S_{in}$. Calculando con la matriz de Muller de una lámina rotante notamos que: 
 
@@ -280,13 +301,6 @@ Finalmente, si hacemos la cuenta $M_{LP} \cdot S'$, llegamos a que la intensidad
 \begin{equation*}
     I(\theta) = \frac{S_0}{2} + \frac{S_1}{4}(1 + \cos 4\theta) + \frac{S_2}{4} \sin 4\theta - \frac{S_3}{2} \sin 2\theta
 \end{equation*}
-
-
-
-
-
-    
-
 
 \section{Circuito del fotodiodo}\label{apendice: circuito_fotodiodo}
 La figura muestra el circuito utilizado para alimentar el fotodiodo y convertir la corriente de salida en un voltaje proporcional a la intensidad de la luz. El circuito también cuenta con un potenciómetro digital para ajustar la ganancia.

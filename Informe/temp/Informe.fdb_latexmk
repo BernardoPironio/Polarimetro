@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber temp/Informe"] 0 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1783897505.34509 -1
+["biber temp/Informe"] 0 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1783897891.59314 -1
   "referencias.bib" 1783733556 1358 6d34eee594f97c1918deaf2039bd9ff1 ""
-  "temp/Informe.bcf" 1783897504 107499 542aabaa0ffa094cab15c49e10225843 "pdflatex"
+  "temp/Informe.bcf" 1783897890 107499 542aabaa0ffa094cab15c49e10225843 "pdflatex"
   (generated)
   "temp/Informe.bbl"
   "temp/Informe.blg"
   (rewritten before read)
-["pdflatex"] 1783897499.59923 "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1783897505.34684 0
+["pdflatex"] 1783897885.79954 "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1783897891.59489 0
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1783723271 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1000.pk" 1779194140 25420 d7ba985555f4d5d160bfbdff3c2b2ac8 ""
   "C:/Users/bpiro/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1095.pk" 1783474410 28976 76289a40bd1a632cc02f39ef3cc70634 ""
@@ -285,12 +285,12 @@
   "Figuras/VistaGral.png" 1783890978 146644 98bc8ba4cf6d519d1fd080176aea2705 ""
   "Figuras/VistaplanoS1S2.png" 1783890978 108386 7f0755aec3d585e4bd407eb972d17cb2 ""
   "Figuras/dispositivo_experimental.pdf" 1783892888 666934 22ab2703d20f679b5f7dcdd470ae8b4a ""
-  "Informe.tex" 1783897498 18997 72096e5117c2c145b0aab6d54352934c ""
-  "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" 1783897498 18997 72096e5117c2c145b0aab6d54352934c ""
-  "temp/Informe.aux" 1783897504 6932 67fd20aa8960e767ef18baa33a385459 "pdflatex"
+  "Informe.tex" 1783897878 19560 ea28a07f990f8c5c2c0b0bd3b56137c0 ""
+  "c:/Users/bpiro/Desktop/Polarimetro/Informe/Informe.tex" 1783897878 19560 ea28a07f990f8c5c2c0b0bd3b56137c0 ""
+  "temp/Informe.aux" 1783897890 6932 125af15d90645583095769c051fdf803 "pdflatex"
   "temp/Informe.bbl" 1783891522 6768 e3bea6d098c4f458cf884f178985d099 "biber temp/Informe"
-  "temp/Informe.out" 1783897504 2475 7b429d8aeddbb807638f2cfc69fd007a "pdflatex"
-  "temp/Informe.run.xml" 1783897504 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
+  "temp/Informe.out" 1783897890 2475 7b429d8aeddbb807638f2cfc69fd007a "pdflatex"
+  "temp/Informe.run.xml" 1783897890 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
   (generated)
   "temp/Informe.aux"
   "temp/Informe.bcf"
