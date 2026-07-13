@@ -1,0 +1,14 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'temp/Informe.blg'
+[95] biber-MSWIN64:340> INFO - === 
+[127] Biber.pm:419> INFO - Reading 'temp/Informe.bcf'
+[211] Biber.pm:979> INFO - Found 6 citekeys in bib section 0
+[233] Biber.pm:4419> INFO - Processing section 0
+[262] Biber.pm:4610> INFO - Looking for bibtex file 'referencias.bib' for section 0
+[299] bibtex.pm:1713> INFO - LaTeX decoding ...
+[318] bibtex.pm:1519> INFO - Found BibTeX data source 'referencias.bib'
+[349] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[349] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[349] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[353] bbl.pm:660> INFO - Writing 'temp/Informe.bbl' with encoding 'UTF-8'
+[356] bbl.pm:763> INFO - Output to temp/Informe.bbl
