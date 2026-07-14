@@ -143,6 +143,8 @@ Para controlar la velocidad del motor se evaluaron distintos drivers que traían
 \subsection{Implementación del dispositivo experimental}
 Se logra implementar cada parte del dispositivo experimental mencionada anteriormente por separado. Se logra girar el motor con la lámina y controlar su velocidad, medir la señal con el fotodiodo (ajustando la ganancia automáticamente) y analizar los datos en tiempo real, visualizando el vector en la esfera de Poincare. Al momento de realizar las mediciones finales no se logra implementar todo el sistema simultáneamente, por lo que las mediciones de los siguientes análisis se realizan utilizando un motor con escobillas, que aporta una mayor facilidad al momento de controlarlo. 
 
+Además, para los siguientes análisis se coloca un polarizador lineal a la salida del láser, seguido de una lámina de media onda; montada de tal forma que permite ser rotada manualmente. Este montaje no es parte del polarímetro en sí, se prepara con el objetivo de garantizar que el haz incidente estuviera linealmente polarizado y de permitir la generación de distintos estados de polarización lineal mediante la rotación del eje principal de la lámina.
+
 \section{Análisis de resultados: Vectores de Poincairé}
 
 Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular de la lámina.
@@ -161,7 +163,8 @@ Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza u
 \end{cases}
 \]
 
-Además, para los siguientes análisis se coloca un polarizador lineal a la salida del láser, seguido de una lámina de media onda; montada de tal forma que permite ser rotada manualmente. Este montaje no es parte del polarímetro en sí, se prepara con el objetivo de garantizar que el haz incidente estuviera linealmente polarizado y de permitir la generación de distintos estados de polarización lineal mediante la rotación del eje principal de la lámina.
+El objetivo de las siguientes secciones es estudiar la repetibilidad de las mediciones, corroborando que los vectores no se distribuyan de manera aleatoria para la misma polarización, realizar una calibración de los parámetros $\delta$ de cada cuadrante y analizar las mediciones para múltiples polarizaciones lineales.
+
 \subsection{Análisis de múltiples curvas}
 
 Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de $\lambda/4$ para un mismo estado de polarización del haz incidente. Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
@@ -197,11 +200,11 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
 \begin{multicols}{2}
 
-Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar la dispersión de las mediciones para un mismo estado de polarización. En este caso, se observa que los vectores presentan una tendencia de agruparse alrededor del vector promedio,sin evidenciar una dispersión significativa ni una distribución aleatoria sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=(16.86^\circ \pm 0.32^\circ)$. 
+Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar la dispersión de las mediciones para un mismo estado de polarización. En este caso, se observa que los vectores presentan una tendencia de agruparse alrededor del vector promedio, sin evidenciar una dispersión significativa ni una distribución aleatoria sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=(16.86^\circ \pm 0.32^\circ)$. 
 
 \subsection{Doble Calibración}
 
-Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonal, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. 
+Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonal, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. Se eligen estas dos configuraciones, ya que, como se ve en la Figura \ref{fig: aj_doble_cal}, la forma funcional de ambas difiere tanto en la fase como en el máximo de ciertos picos, y para la calibración se requiere obtener valores para los $\delta$ que tengan en cuenta esta distinción. 
 \vspace{0.3cm}
 
 Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se define $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
@@ -307,29 +310,33 @@ Para analizar diversas polarizaciones lineales del haz, se rota la lámina de me
 \begin{figure}[H]
     \centering
 
-    \begin{subfigure}{0.32\columnwidth}
+    % Figura principal
+    \begin{subfigure}{0.6\columnwidth}
         \centering
         \includegraphics[width=\linewidth]{Figuras/esfera_todas_configuraciones_con_etiquetas.pdf}
         \caption{Vista general de los vectores.}
-        \label{fig: barrido a}
+        \label{fig:barrido_a}
     \end{subfigure}
-    \hfill
-    \begin{subfigure}{0.32\columnwidth}
+
+    \vspace{0.4cm}
+
+    % Figuras secundarias
+    \begin{subfigure}{0.45\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/esfera_calibracion_S1S2.pdf}
-        \caption{ Vista en el plano de los versores $S_1$ y $S_2$.}
-        \label{fig: barrido b}
+        \includegraphics[width=\linewidth]{Figuras/esfera_todas_S1S2.pdf}
+        \caption{Vista en el plano de los versores $S_1$ y $S_2$.}
+        \label{fig:barrido_b}
     \end{subfigure}
     \hfill
-    \begin{subfigure}{0.32\columnwidth}
+    \begin{subfigure}{0.45\columnwidth}
         \centering
         \includegraphics[width=\linewidth]{Figuras/esfera_todas_S1S3.pdf}
         \caption{Vista en el plano de los versores $S_3$ y $S_1$.}
-        \label{fig: barrido c}
+        \label{fig:barrido_c}
     \end{subfigure}
 
-    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida distintas polarizaciones. Las referencias de ángulos corresponden a la rotación de la lámina de media onda. Las Figuras (a), (b), y (c) representan distintas perspectivas de la misma medición para facilitar la visualización.}
-    \label{fig: barrido}
+    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para distintas polarizaciones lineales. Las referencias de ángulos corresponden a la rotación de la lámina de media onda. Las Figuras (a), (b) y (c) representan distintas perspectivas de la misma medición para facilitar la visualización.}
+    \label{fig:barrido}
 \end{figure}
 
 \begin{multicols}{2}
