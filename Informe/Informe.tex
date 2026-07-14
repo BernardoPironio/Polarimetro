@@ -161,11 +161,10 @@ Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza u
 \end{cases}
 \]
 
-Además, para los siguientes análisis se coloca un polarizador lineal a la salida del láser, seguido de una lámina de media onda; montada de tal forma que permite ser rotada manualmente. Este montaje no es parte del polarímetro en sí, se prepara para lograr variar la polarización de manera controlada.
-
+Además, para los siguientes análisis se coloca un polarizador lineal a la salida del láser, seguido de una lámina de media onda; montada de tal forma que permite ser rotada manualmente. Este montaje no es parte del polarímetro en sí, se prepara con el objetivo de garantizar que el haz incidente estuviera linealmente polarizado y de permitir la generación de distintos estados de polarización lineal mediante la rotación del eje principal de la lámina.
 \subsection{Análisis de múltiples curvas}
 
-Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de onda para un mismo estado de polarización del haz incidente. Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
+Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de $\lambda/4$ para un mismo estado de polarización del haz incidente. Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
 
 \end{multicols}
 \begin{figure}[H]
@@ -173,22 +172,22 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/VistaGral.png}
+        \includegraphics[width=\linewidth]{Figuras/esfera_3d_0conf3.pdf}
         \caption{Vista general de los vectores}
         \label{fig: multi_curvas a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/VistaplanoS1S2.png}
+        \includegraphics[width=\linewidth]{Figuras/0confvista_S1S2.pdf}
         \caption{Vista en el plano de los versores $S_1$ y $S_2$}
         \label{fig: multi_curvas b}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/LateralS3S2.png}
-        \caption{Vista en el plano de los versores $S_3$ y $S_2$}
+        \includegraphics[width=\linewidth]{Figuras/0confvista_S1S3.pdf}
+        \caption{Vista en el plano de los versores $S_3$ y $S_1$}
         \label{fig: multi_curvas c}
     \end{subfigure}
 
@@ -198,20 +197,17 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
 \begin{multicols}{2}
 
-Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y distinguir si hay alguna distribución aleatoria  lo cual sería indicador de algún error sistemático en el análisis o en la adquisición de datos. En este caso, se observa que los vectores presentan una tendencia de agruparse alrededor del vector promedio, indicando que las mediciones no presentan un grado significativo de imprecisión.
-%estimar algun tipo de error de theta 0??
+Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar la dispersión de las mediciones para un mismo estado de polarización. En este caso, se observa que los vectores presentan una tendencia de agruparse alrededor del vector promedio,sin evidenciar una dispersión significativa ni una distribución aleatoria sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=(16.86^\circ \pm 0.32^\circ)$. 
 
 \subsection{Doble Calibración}
 
-Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos curvas, aquella correspondida a una polarización horizontal y otra vertical. 
-
+Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonal, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. 
 \vspace{0.3cm}
 
 Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se define $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
 
 %DOCE? NO SERIAN 14?
-\noindent Dado que son doce parámetros a ajustar, cuatro parámetros de Stokes de cada curva y cuatro retrasos de la lámina, se decide fijar uno de los retrasos al valor $\delta_1=1.57$ (rad). 
-
+\noindent El ajuste involucra doce parámetros libres: los cuatro parámetros de Stokes correspondientes a cada una de las dos curvas y los cuatro valores de retraso $\delta_i$. Con el fin de eliminar la indeterminación asociada a una fase global, se fijó uno de los retrasos en $\delta_1$=1.57.
 %temanormalizacion
 
 A partir de esto, en la Figura \ref{fig: aj_doble_cal}, se visualiza el ajuste realizado.
@@ -219,7 +215,21 @@ A partir de esto, en la Figura \ref{fig: aj_doble_cal}, se visualiza el ajuste r
 \end{multicols}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{Figuras/dobleaj.png}
+
+    \begin{subfigure}{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/ajuste_HWP0.pdf}
+        \caption{Ajuste de la intensidad del haz polarizado con la lámina de $\lambda/2$ rotada $0^\circ$}
+        \label{fig: aj aj_doble_cal a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\columnwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figuras/ajuste_HWP45.pdf}
+        \caption{Ajuste de la intensidad del haz polarizado con la lámina de $\lambda/2$ rotada $45^\circ$}
+        \label{fig: aj_doble_cal b}
+    \end{subfigure}
+
     \caption{Se observa el ajuste realizado para las dos curvas, correspondientes a una rotación de la lámina de media onda de $0^\circ$ y $45^\circ$ respectivamente. Para ambos casos, el valor del DOP obtenido para el vector de Stokes toma un valor de $1$.}
     \label{fig: aj_doble_cal}
 \end{figure}
@@ -245,8 +255,7 @@ $\delta_4$ & 1.4894  & 0.0145 \\
 \label{tab: cal_deltas}
 \end{table}
 
-Para la polarización horizontal los parámetros de Stokes obtenidos fueron: $S_{0H}=0.776 \pm 0.006 $, $S_{1H}=(0.687\pm 0.007)$, $S_{2H}=(-0.360\pm 0.005)$ y $S_{3H}=(0.0018\pm 0.0019)$. Por otro lado, para la polarización vertical se obtuvo:  $S_{0V}=0.740 \pm 0.005 $, $S_{1V}=(-0.610\pm 0.006)$, $S_{2V}=(0.411\pm 0.005)$ y $S_{3V}=(-0.0811\pm 0.0018)$. Si bien el sistema experimental fue diseñado para que el haz incidente sea lineal, en los resultados se distingue que, en general, la componente de $S_3$ no es nula, aunque se lleva un orden de magnitud en el caso de la polarización vertical y hasta dos órdenes menos en el caso de la horizontal. Esto puede deberse a que el polarímetro que se encuentra a la salida del láser no sea ideal, y el láser, al no ser lineal, evidencia que pudo haber sobrevivido alguna componente circular. 
-
+Los parámetros de Stokes obtenidos para ambas configuraciones demuestran que la polarización es del tipo lineal, aunque la componente $S_3$ no es nula pero considerablemente menor. En particular, para la polarización horizontal se obtiene $S_{3H}=(0.0018\pm 0.0019)$, mientras que para la polarización vertical se obtiene $S_{3V}=(-0.0811\pm 0.0018)$.  Para ambos casos $S_3$  resultó ser un  valor de orden de magnitud menor al resto de parámetros. Si bien idealmente debería anularse, estos resultados se pueden atribuir a imperfecciones en la preparación de la polarización lineal incidente o a la no linealidad de los elementos empleados. También puede deberse a desalineaciones de los elementos ópticos en el montaje experimental.
 %paramegros de bondad de ajuste??
 
 En la Figura \ref{fig: doble_cal}  se observa una representación de ambos vectores desde diferentes perspectivas. Dado que son dos polarizaciones que se diferencian en una diferencia de fase de $\pi$, tienen que encontrarse en el extremo opuesto de la esfera y por ser configuraciones lineales, en el plano $S_1 $ y $S_2$.
@@ -257,22 +266,22 @@ En la Figura \ref{fig: doble_cal}  se observa una representación de ambos vecto
 
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/esferacal_vistagral.png}
+        \includegraphics[width=\linewidth]{Figuras/esfera_calibracion.pdf}
         \caption{Vista general de los vectores.}
         \label{fig: doble_cal a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/cal_S3S1.png}
+        \includegraphics[width=\linewidth]{Figuras/esfera_calibracion_S1S2.pdf}
         \caption{Vista en el plano de los versores $S_1$ y $S_2$.}
         \label{fig: doble_cal b}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/cal_S2S1.png}
-        \caption{Vista en el plano de los versores $S_3$ y $S_2$.}
+        \includegraphics[width=\linewidth]{Figuras/esfera_calibracion_S1S3.pdf}
+        \caption{Vista en el plano de los versores $S_3$ y $S_1$.}
         \label{fig: doble_cal c}
     \end{subfigure}
 
@@ -300,22 +309,22 @@ Para analizar diversas polarizaciones lineales del haz, se rota la lámina de me
 
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/vistagral_allconfig.png}
+        \includegraphics[width=\linewidth]{Figuras/esfera_todas_configuraciones_con_etiquetas.pdf}
         \caption{Vista general de los vectores.}
         \label{fig: barrido a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/allcomf_lats2.png}
+        \includegraphics[width=\linewidth]{Figuras/esfera_calibracion_S1S2.pdf}
         \caption{ Vista en el plano de los versores $S_1$ y $S_2$.}
         \label{fig: barrido b}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/allcomf_lats3.png}
-        \caption{Vista en el plano de los versores $S_3$ y $S_2$.}
+        \includegraphics[width=\linewidth]{Figuras/esfera_todas_S1S3.pdf}
+        \caption{Vista en el plano de los versores $S_3$ y $S_1$.}
         \label{fig: barrido c}
     \end{subfigure}
 
@@ -496,26 +505,27 @@ En la siguiente tabla se lee el valor que toma el DOP para cada polarización me
 \centering
 \begin{tabular}{ccc}
 \hline
-Angulo & Valor (DOP) & Incerteza\\
+Angulo & Valor (DOP) \\
 \hline
-$6^{\circ}$  & 1.00 & \\
-$12^{\circ}$  & 1.00 &  \\
-$18^{\circ}$  & 1.00 &  \\
-$22.5^{\circ}$ & 1.00  &  \\
-$24^{\circ}$  & 1.00 & \\
-$30^{\circ}$  & 1.00 &  \\
-$36^{\circ}$  & 1.00 &  \\
-$42^{\circ}$ & 1.00  &  \\
-$45^{\circ}$  & 1.00 & \\
-$-6^{\circ}$  & 0.93 &  \\
-$-12^{\circ}$  & 0.84 &  \\
-$-18{\circ}$ & 0.83  &  \\
-$-22.5^{\circ}$  & 0.84 & \\
-$-24^{\circ}$  & 0.81 &  \\
-$-30^{\circ}$  & 0.85 &  \\
-$-36^{\circ}$ & 0.89  &  \\
-$-42^{\circ}$  & 0.97 & \\
-$-45^{\circ}$  & 1.00 &  \\
+$0^{\circ}$  & $1.000\pm 0.004$ \\
+$6^{\circ}$  & $1.000\pm 0.009$ \\
+$12^{\circ}$  & $1.000\pm 0.012$ \\
+$18^{\circ}$  & $1.000\pm 0.011 $ \\
+$22.5^{\circ}$ & $1.000\pm 0.017$ \\
+$24^{\circ}$  & $1.000\pm0.016$  \\
+$30^{\circ}$  & $1.000\pm0.013$   \\
+$36^{\circ}$  & $1.000\pm0.06$   \\
+$42^{\circ}$ & $1.000\pm0.05$    \\
+$45^{\circ}$  & $1.000\pm0.04$  \\
+$-6^{\circ}$  & $0.927\pm0.04$  \\
+$-12^{\circ}$  & $0.840\pm0.05$  \\
+$-18{\circ}$ & $0.830\pm0.04$    \\
+$-22.5^{\circ}$  & $0.843\pm0.04$ \\
+$-24^{\circ}$  & $0.809\pm0.04$   \\
+$-30^{\circ}$  & $0.849\pm0.02$  \\
+$-36^{\circ}$ & $0.894\pm0.03$   \\
+$-42^{\circ}$  & $0.973\pm0.04$ \\
+$-45^{\circ}$  & $1.00\pm0.04$   \\
 \hline
 \end{tabular}
 \caption{Valores del DOP para distintas polarizaciones. El ángulo indica la rotación de la lámina de media onda con respecto a $0^{\circ}$.}
