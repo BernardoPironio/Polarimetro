@@ -2369,7 +2369,8 @@
     <bcf:citekey order="3" intorder="1">amplificador_operacional</bcf:citekey>
     <bcf:citekey order="4" intorder="1">potenciometro</bcf:citekey>
     <bcf:citekey order="5" intorder="1">raspberry_pi</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">driver</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">simple_foc_mini</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">driver</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

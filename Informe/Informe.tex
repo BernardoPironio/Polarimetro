@@ -80,27 +80,7 @@ s_3
     DOP = \frac{\sqrt{s_1^2 + s_2^2 + s_3^2}}{s_0}.
 \end{equation*}
 
-
-Si se considera una polarización incidente descrita por $S_{in}$ y las matrices de Muller de una lámina con retardo $\delta$(rotada un ángulo $\theta$) y un polarizador lineal(asumiendo que el eje de transmisión del polarizador está alineado con el eje horizontal) como 
-
-\begin{equation*}
-M_{R}(\theta,\delta) = \begin{pmatrix}
-1 & 0 & 0 & 0 \\
-0 & \cos^2 2\theta + \sin^2 2\theta \cos \delta & \sin 2\theta \cos 2\theta(1-\cos \delta) & -\sin2\theta \sin \delta \\
-0 & \sin2\theta \cos2\theta(1-\cos \delta) & \sin^2\theta + \cos^2 2\theta \cos \delta& \cos 2\theta \sin \delta \\
-0 & \sin2\theta \sin \delta & -\cos2\theta \sin \delta & \cos \delta
-\end{pmatrix}, 
-\end{equation*}
-\begin{equation*}
-M_{LP} = \frac{1}{2}\begin{pmatrix}
-1 & 1 & 0 & 0 \\
-1 & 1 & 0 & 0 \\
-0 & 0 & 0 & 0 \\
-0 & 0 & 0 & 0
-\end{pmatrix}
-\end{equation*}
-
-respectivamente, se puede obtener la polarización de salida a partir de la siguiente ecuación:
+Si se considera una polarización incidente descrita por $S_{in}$ y las matrices de Muller de una lámina con retardo $\delta$(rotada un ángulo $\theta$) y un polarizador lineal(asumiendo que el eje de transmisión del polarizador está alineado con el eje horizontal) se obtiene la polarización de salida a partir de la siguiente ecuación:
 
 
 \begin{equation*}
@@ -132,7 +112,7 @@ con,
 \end{equation*}
 
 %% CHEQUEAR ESTO
-Es posible identificar los términos como la intensidad promedio, la contribución de la polarización lineal, la contribución de la polarización diagonal y la contribución de la polarización circular, respectivamente. La cuenta para llegar a dicha expresion se expica con detalle en el apendice \ref{apendice: cuenta_intensidad}.
+Es posible identificar los términos como la intensidad promedio, la contribución de la polarización lineal, la contribución de la polarización diagonal y la contribución de la polarización circular, respectivamente. La cuenta para llegar a dicha expresión se explica con detalle en el apéndice \ref{apendice: cuenta_intensidad}.
 
 \section{Armado del polarímetro}
 El polarímetro se construye principalmente por un sistema óptico que consiste en una lámina de cuarto de onda rotante, un polarizador lineal y un fotodiodo que mide la señal de salida. La lámina de cuarto de onda se monta sobre un motor sin escobillas que permite rotarla a una velocidad constante. La señal de salida del fotodiodo se adquiere mediante un microcontrolador que también se encarga de controlar la velocidad del motor y enviar los datos a una computadora para su posterior análisis. Se utiliza una carcasa impresa en 3D para montar la lámina al motor. A esta se le encastra un imán en el exterior que, junto con un encoder magnético, detecta el número de vueltas del motor. En la Figura \ref{fig: dispositivo_experimental} se observa un diagrama del dispositivo descrito.
@@ -145,30 +125,35 @@ El polarímetro se construye principalmente por un sistema óptico que consiste 
 \end{figure}
 
 \subsection{Sistema óptico}
-Para la construcción del polarímetro se utiliza como referencia un láser de 630-660 nm, con una potencia menor a 5 mW. Se utiliza una lámina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. Para la medición de la intensidad de salida se utiliza un fotodiodo de silicio \cite{fotodiodo}. Para la alimentación del fotodiodo se monta un circuito, inicialmente alimentado con una fuente externa, compuesto por un regulador de voltaje LM1117 \cite{regulador} de 3.3 V y un amplificador operacional LM324N \cite{amplificador_operacional} para convertir la corriente del fotodiodo en un voltaje proporcional a la intensidad de luz incidente. El circuito también incluye un potenciómetro digital \cite{potenciometro} para ajustar la ganancia del amplificador y así maximizar el voltaje medido sin permitir que la señal se sature. El potenciómetro contiene internamente 100 pasos de resistencias desde los $40$ $\Omega$ hasta $10$ k$\Omega$ que se recorren utilizando un microcontrolador. El circuito completo se muestra en la figura \ref{fig: circuito} en el apéndice \ref{apendice: circuito_fotodiodo}. La señal de salida del fotodiodo se adquiere mediante un microcontrolador Raspberry Pi Pico 2W \cite{raspberry_pi}, que se encarga de enviar los datos a una computadora y regular el valor del potenciómetro digital.
+Para la construcción del polarímetro se utiliza como referencia un láser de 630-660 nm, con una potencia menor a 5 mW. Se utiliza una lámina de cuarto de onda B. Halle para 633 nm y un polarizador lineal del mismo fabricante. Para la medición de la intensidad de salida se utiliza un fotodiodo de silicio \cite{fotodiodo}. Para la alimentación del fotodiodo se monta un circuito, inicialmente alimentado con una fuente externa, compuesto por un regulador de voltaje LM1117 \cite{regulador} de 3.3 V y un amplificador operacional LM324N \cite{amplificador_operacional} para convertir la corriente del fotodiodo en un voltaje proporcional a la intensidad de luz incidente. El circuito también incluye un potenciómetro digital \cite{potenciometro} para ajustar la ganancia del amplificador y así maximizar el voltaje medido sin permitir que la señal se sature. El potenciómetro contiene internamente 100 pasos de resistencias desde los $40$ $\Omega$ hasta $10$ k$\Omega$ que se recorren utilizando un microcontrolador. El circuito completo se muestra en la figura \ref{fig: circuito} del apéndice \ref{apendice: circuito_fotodiodo}. La señal de salida del fotodiodo se adquiere mediante un microcontrolador Raspberry Pi Pico 2W \cite{raspberry_pi}, que se encarga de enviar los datos a una computadora y regular el valor del potenciómetro digital de forma automática. Esto se logra comparando los valores vecinos de una medición y pidiendo que la diferencia entre estos tome un valor que no sea despreciable. 
 
 \subsection{Control del motor}
-La lámina se monta sobre un motor BLDC 2204-260KV con el eje hueco, este también es controlado por la Raspberry Pi Pico. Este motor, a diferencia de los motores a pasos, no utiliza escobillas, sino que la conmutación es eléctrica. Además, el rotor está formado por imanes permanentes y el estator por tres fases. Gracias a esto es capaz de funcionar más rapido que otros tipos de motores. En la Figura \ref{fig: motor} se observa un esquema de ese tipo de motores.
+La lámina se monta sobre un motor BLDC 2204-260KV con el eje hueco, este también es controlado por la Raspberry Pi Pico. Este motor, a diferencia de los motores a pasos, no utiliza escobillas, sino que la conmutación es eléctrica. Además, el rotor está formado por imanes permanentes y el estator por tres fases. Gracias a esto es capaz de girar más rapido y con mayor suavidad que otros tipos de motores. En la Figura \ref{fig: motor} se observa un esquema del motor.
 
-MAÑANA FIGURA DE MOTOR
+\begin{figure}[H]
+    \centering
+    \includegraphics[width = 0.3\textwidth]{Figuras/motor_bldc_rotor_externo.pdf}
+    \caption{Se observa un esquema del motor visto desde frente. Este posee el rotor con imanes permanentes cuyos colores(azul y rojo) representan la alternación en la polaridad. En el centro se ubica el estator que contiene a las bobinas con las tres fases, representadas en rojo, verde y amarillo claro. Finalmente, se nota que el centro del motor es hueco.}
+    \label{fig: motor}
+\end{figure}
 
-Para controlar la velocidad del motor se probaron distintos drivers que traían distintas complicaciones. Finalmente, se optó por utilizar el driver Brushless 3 Click \cite{driver}. La lámina se monta sobre el motor utilizando una carcaza impresa en 3D, que permite alinear el eje de rotación del motor con el eje óptico de la lámina. Para controlar el número de vueltas del motor se encastra un imán en la carcaza y se utiliza un encoder magnetico a modo de TIC. El encoder no se utiliza para medir la rotación del motor directamente, ya que para lograr esto es necesario que el imán esté perfectamente alineado con centro del motor y hacer esto bloquearía el eje por donde pasa el haz de luz. 
+Para controlar la velocidad del motor se probaron distintos drivers que traían complicaciones, en particular el SimpleFoc Mini \cite{simple_foc_mini} funcionaba correctamente solo mediante el uso de su librería, pero para el uso de esta era necesario trabaja a la par de un encoder centrado en el motor(esto impediría el paso del haz del láser). Finalmente, se opta por utilizar el driver Brushless 3 Click \cite{driver}. La lámina se monta sobre el motor utilizando una carcaza impresa en 3D, que permite alinear el eje de rotación del motor con el eje óptico de la lámina. Para controlar el número de vueltas del motor se encastra un imán en la carcaza y se utiliza un encoder magnetico a modo de TIC. El encoder no se utiliza para medir la rotación del motor directamente, ya que para lograr esto es necesario que el imán esté perfectamente alineado con centro del motor y hacer esto bloquearía el eje por donde pasa el haz de luz. 
 
 \section{Análisis de resultados: Vectores de Poincairé}
 
-Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular.
+Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular de la lámina.
 
 \vspace{0.2cm}
 
 \noindent El retardo se define de manera seccional como
 
 \[
-\delta(\theta)=
+\delta(\phi)=
 \begin{cases}
-\delta_1, & 0 \leq \theta < \frac{\pi}{2} \\
-\delta_2, & \frac{\pi}{2} \leq \theta < \pi \\
-\delta_3, & \pi \leq \theta < \frac{3\pi}{2} \\
-\delta_4, & \frac{3\pi}{2} \leq \theta < 2\pi
+\delta_1, & 0 \leq \phi < \frac{\pi}{2} \\
+\delta_2, & \frac{\pi}{2} \leq \phi < \pi \\
+\delta_3, & \pi \leq \phi < \frac{3\pi}{2} \\
+\delta_4, & \frac{3\pi}{2} \leq \phi < 2\pi
 \end{cases}
 \]
 
@@ -176,7 +161,7 @@ Además, para los siguientes análisis se coloca un polarizador lineal a la sali
 
 \subsection{Análisis de múltiples curvas}
 
-Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de onda para un mismo estado de polarización del haz incidente. Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Fig. \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
+Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de onda para un mismo estado de polarización del haz incidente. Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
 
 \end{multicols}
 \begin{figure}[H]
@@ -225,13 +210,13 @@ Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el á
 
 %temanormalizacion
 
-A partir de esto, en la Fig. \ref{fig: aj_doble_cal}, se visualiza el ajuste realizado.
+A partir de esto, en la Figura \ref{fig: aj_doble_cal}, se visualiza el ajuste realizado.
 
 \end{multicols}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{Figuras/dobleaj.png}
-    \caption{Se observa el ajuste realizado para las dos curvas, correspondientes a una rotación de la lámina de media onda de $0^\circ$ y $45^\circ$ respectivamente. Para ambos casos, el valor del DOP obtenido para cada vector de Stokes del par toma un valor de $1$.}
+    \caption{Se observa el ajuste realizado para las dos curvas, correspondientes a una rotación de la lámina de media onda de $0^\circ$ y $45^\circ$ respectivamente. Para ambos casos, el valor del DOP obtenido para el vector de Stokes toma un valor de $1$.}
     \label{fig: aj_doble_cal}
 \end{figure}
 
@@ -256,9 +241,11 @@ $\delta_4$ & 1.4894  & 0.0145 \\
 \label{tab: cal_deltas}
 \end{table}
 
-Para la polarización horizontal los parámetros de Stokes obtenidos fueron: $S_{0H}=0.776 \pm 0.006 $, $S_{1H}=(0.687\pm 0.007)$, $S_{2H}=(-0.360\pm 0.005)$ y $S_{3H}=(0.0018\pm 0.0019)$. Por otro lado, para la polarización vertical se obtuvo:  $S_{0V}=0.740 \pm 0.005 $, $S_{1V}=(-0.610\pm 0.006)$, $S_{2V}=(0.411\pm 0.005)$ y $S_{3V}=(-0.0811\pm 0.0018)$. Si bien el sistema experimental fue diseñado para que el haz incidente sea lineal, en los resultados se distingue que, en general, la componente de $S_3$ no es nula, aunque se lleva un orden de magnitud en el caso de la polarización vertical y hasta dos órdenes menos en el caso de la horizontal. Esto puede deberse a que el polarímetro que se encuentra a la salida del láser no sea ideal, y el láser al no ser lineal, evidencia que pudo haber sobrevivido alguna componente circular. 
+Para la polarización horizontal los parámetros de Stokes obtenidos fueron: $S_{0H}=0.776 \pm 0.006 $, $S_{1H}=(0.687\pm 0.007)$, $S_{2H}=(-0.360\pm 0.005)$ y $S_{3H}=(0.0018\pm 0.0019)$. Por otro lado, para la polarización vertical se obtuvo:  $S_{0V}=0.740 \pm 0.005 $, $S_{1V}=(-0.610\pm 0.006)$, $S_{2V}=(0.411\pm 0.005)$ y $S_{3V}=(-0.0811\pm 0.0018)$. Si bien el sistema experimental fue diseñado para que el haz incidente sea lineal, en los resultados se distingue que, en general, la componente de $S_3$ no es nula, aunque se lleva un orden de magnitud en el caso de la polarización vertical y hasta dos órdenes menos en el caso de la horizontal. Esto puede deberse a que el polarímetro que se encuentra a la salida del láser no sea ideal, y el láser, al no ser lineal, evidencia que pudo haber sobrevivido alguna componente circular. 
 
 %paramegros de bondad de ajuste??
+
+En la Figura \ref{fig: doble_cal}  se observa una representación de ambos vectores desde diferentes perspectivas. Dado que son dos polarizaciones que se diferencian en una diferencia de fase de $\pi$, tienen que encontrarse en el extremo opuesto de la esfera y por ser configuraciones lineales, en el plano $S_1 $ y $S_2$.
 
 \end{multicols}
 \begin{figure}[H]
@@ -291,9 +278,7 @@ Para la polarización horizontal los parámetros de Stokes obtenidos fueron: $S_
 
 \begin{multicols}{2}
 
-En la Figura \ref{fig: doble_cal}  se observa una representación de ambos vectores desde diferentes perspectivas. Dado que son dos polarizaciones que se diferencian en una diferencia de fase de $\pi$, tienen que encontrarse en el extremo opuesto de la esfera y por ser configuraciones lineales, en el plano $S_1 $ y $S_2$.
-
-En el caso de Figura \ref{fig: doble_cal b} nuevamente se distingue la presencia de la componente $S_3$. Sin embargo, en el plano $S_1 $ y $S_2$ de la Fig. \ref{fig: doble_cal c} se observa que estos vectores ocupan posiciones aproximadamente opuestas sobre la esfera de Poincaré. 
+En el caso de Figura \ref{fig: doble_cal b} nuevamente se distingue la presencia de la componente $S_3$. Sin embargo, en el plano $S_1 $ y $S_2$ de la Fig. \ref{fig: doble_cal c} se observa que estos vectores ocupan posiciones aproximadamente opuestas sobre la esfera de Poincaré. Se calcula el producto entre los vectores de Stokes para cada polarización, tomando este un valor de PONER VALOR, para tener una referencia numérica de cuan opuestos son.
 
 %tienen uniddes , los presento asi? o como los vectores depoincare?
 %hablo de algun angulo de error dado que no son perfectamente opuestos?
@@ -330,23 +315,23 @@ Para analizar diversas polarizaciones lineales del haz, se rota la lámina de me
         \label{fig: barrido c}
     \end{subfigure}
 
-    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0° y 45. Las Figuras (a), (b), y (c) representan distintas perspectivas de la misma medición para facilitar la visualización.}
+    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida distintas polarizaciones. Las referencias de ángulos corresponden a la rotación de la lámina de media onda. Las Figuras (a), (b), y (c) representan distintas perspectivas de la misma medición para facilitar la visualización.}
     \label{fig: barrido}
 \end{figure}
 
 \begin{multicols}{2}
 
-Según el modelo teórico, las normas deberían de estar en la superficie de la esfera(DOP = 1), dado que el haz se polarizó completamente con un polarizador lineal. Sin embargo, la Figura \ref{fig: barrido b} demuestra que hay algunos casos en los cuales no sucede(ver Apéndice \ref{apendice: dops}). El valor más alejado del grado de polarización esperado toma un valor de $0.81$ para el caso en el que la lamina se rota $-24^\circ$. Además, en la Figura \ref{fig: barrido c} se observa la presencia de componentes en el versor $S_3$, como sucedió en el análisis de la calibración. De todas formas, los vectores están contenidos en mayor proporción en el plano $S_1$ y $S_2$.
+Según el modelo teórico, las normas deberían de estar en la superficie de la esfera(DOP = 1), dado que el haz se polarizó completamente con un polarizador lineal. Sin embargo, la Figura \ref{fig: barrido b} demuestra que hay algunos casos en los cuales no sucede(ver Apéndice \ref{apendice: dops}). El valor más alejado del grado de polarización esperado toma un valor de $0.81$ para el caso en el que la lamina se rota $-24^\circ$. Además, en la Figura \ref{fig: barrido c} se observa la presencia de componentes en el versor $S_3$, como sucedió en el análisis de la calibración. De todas formas, los vectores están contenidos en mayor proporción en el plano $S_1$ y $S_2$. 
 
-Estos resultados demuestran que las mediciones tomadas poseen un comportamiento consistente con el modelo teórico, teniendo en cuenta de las imperfecciones que pueden deberse a considerar el haz como completamente polarizado de manera lineal.
+Estos resultados demuestran que las mediciones tomadas poseen un comportamiento consistente con el modelo teórico, siendo que para el barrido de polarizaciones lineales los vectores tieneden a recorrer el ecuador de la esfera de Poincaré. Se tiene en cuenta que las imperfecciones que pueden deberse a considerar el haz como completamente polarizado de manera lineal.
 
 
 %digo a que me refiero con mayor proporcion?
+% YO SE QUE ESTAS CONCLUSIONES ESTAN MUY VERDES, LAS ESCRIBI UN TOQUE CANSADO PERO QUERIA YA TENER ALGO PARA IR CERRANDO 
+\section{Conclusiones}
+Se logra montar un polarímetro dinámico con las distintas componentes funcionando por separado. Aunque las mediciones finales no se hayan realizado con el sistema final, cada parte funciona correctamente. Se logra controlar la velocidad del motor y medir la señal con el fotodiodo enviando los datos a la computadora a través de un microprocesador para hacer un análisis en tiempo real.  
 
-
-
-
-
+En cuanto a las mediciones, se logra visualizar una distribución uniforme de mediciones para una misma polarización que ronda un punto promedio en la esfera de Poincaré. Se utilizan dos polarizaciones distintas, con la lámina rotada $0^\circ$ y $45^\circ$, fijando los valores de los $\delta$ para cada cuadrante. Finalmente, salvando algunas polarizaciones cuyos vectores toman componentes circulares, se mide un barrido de distintas polarizaciones lineales, mostrando como estas recorren el ecuador de la esfera, coincidiendo con la teoría esperada.
 
 \end{multicols}
 
@@ -355,33 +340,64 @@ Estos resultados demuestran que las mediciones tomadas poseen un comportamiento 
 \appendix
 
 \section{Cálculo de la intensidad de salida}\label{apendice: cuenta_intensidad}
-La siguiente ecuación detalla el cálculo de la intensidad de la luz de salida tras pasar por la lámina rotada y el polarizador línea. Las matrices de Muller que representan a la lamina de cuarto de onda(rotada un angulo $\theta$) y un polarizador lineal(orientado horizontalmente) son 
+La siguiente ecuación detalla el cálculo de la intensidad de la luz de salida tras pasar por la lámina rotada y el polarizador línea. En general mencionamos que $S_{out} = M_{LP} \cdot M_{R}(\theta,\delta) \cdot S_{in} = M_{LP} \cdot S'$, donde estamos definiendo $S' = M_{R}(\theta,\delta) \cdot S_{in}$. Las matrices de Muller de una lámina de retardo $\delta$ (rotada un ángulo $\theta$) y un polarizador lineal(asumiendo que el eje de trasnmision esta alineado con el eje horizontal) son 
 
-, respectivamente.
+\begin{equation*}
+M_{R}(\theta,\delta) = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & \cos^2 2\theta + \sin^2 2\theta \cos \delta & \sin 2\theta \cos 2\theta(1-\cos \delta) & -\sin2\theta \sin \delta \\
+0 & \sin2\theta \cos2\theta(1-\cos \delta) & \sin^2\theta + \cos^2 2\theta \cos \delta& \cos 2\theta \sin \delta \\
+0 & \sin2\theta \sin \delta & -\cos2\theta \sin \delta & \cos \delta
+\end{pmatrix}, 
+\end{equation*}
+\begin{equation*}
+M_{LP} = \frac{1}{2}\begin{pmatrix}
+1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{equation*}
 
+respectivamente.
 
-
-En general mencionamos que $S_{out} = M_{LP} \cdot M_{QWP}(\theta) \cdot S_{in} = M_{LP} \cdot S'$, donde estamos definiendo $S' = M_{QWP}(\theta) \cdot S_{in}$. Calculando con la matriz de Muller de una lámina rotante notamos que: 
+Calculando $S'$ con la matriz de Muller de la lámina se nota que 
 
 \begin{equation*}
 \begin{cases}
     S_0' = S_0 \\
-    S_1' = \cos^2 2\theta \cdot S_1 + \sin 2\theta \cos 2\theta \cdot S_2 - \sin 2\theta S_3 \\
-    S_2' = \sin 2\theta \cos 2\theta \cdot S_1 + \sin^2 2\theta \cdot S_2 + \cos 2\theta \cdot S_3 \\
-    S_3' = \sin 2\theta \cdot S_1 - \cos 2\theta \cdot S_2
+    S_1' = (\cos^2 2\theta + \cos \delta \sin^2 2\theta) \cdot S_1 +(1 - \cos \delta) \sin 2\theta \cos 2\theta \cdot S_2 - \sin \delta \sin 2\theta S_3 \\
 \end{cases}
 \end{equation*}
 
 Finalmente, si hacemos la cuenta $M_{LP} \cdot S'$, llegamos a que la intensidad es
 
 \begin{equation*}
-    I(\theta) = \frac{1}{2} (S_0' + S_1') = \frac{S_0}{2} + \frac{S_1}{2} \cos^2 2\theta + \frac{S_2}{2} \sin 2\theta \cos 2\theta - \frac{S_3}{2} \sin 2\theta
+    I(\theta) = \frac{1}{2} (S_0' + S_1') = \frac{S_0}{2} + \frac{S_1}{2} (\cos^2 2\theta + \cos \delta \sen^2 2\theta) + \frac{S_2}{2}(1 - \cos \delta) \sin 2\theta \cos 2\theta - \frac{S_3}{2} \sin \delta \sin 2\theta
 \end{equation*}
 
 , donde luego de utilizar ciertas identidades trigonométricas,
 
+\begin{equation}\label{ecuacion: ecuacion_intensidad}
+    I(\theta) = a_0 + a_2 \sin 2\theta + a_{4c} \cos 4\theta + a_{4s}\sin 4\theta 
+\end{equation}
+
+con,
+
 \begin{equation*}
-    I(\theta) = \frac{S_0}{2} + \frac{S_1}{4}(1 + \cos 4\theta) + \frac{S_2}{4} \sin 4\theta - \frac{S_3}{2} \sin 2\theta
+    a_0 = \frac{S_0}{2} + \frac{S_1}{4}(1+\cos \delta),
+\end{equation*}
+
+\begin{equation*}
+    a_2 = - \frac{S_3}{2}\sin \delta,
+\end{equation*}
+
+\begin{equation*}
+    a_{4c} = \frac{S_1}{4}(1-\cos \delta),
+\end{equation*}
+
+\begin{equation*}
+    a_{4c} = \frac{S_2}{4}(1-\cos \delta).
 \end{equation*}
 
 \section{Circuito del fotodiodo}\label{apendice: circuito_fotodiodo}
@@ -470,7 +486,7 @@ La figura muestra el circuito utilizado para alimentar el fotodiodo y convertir 
 \end{figure}
 
 \section{Valores de DOP para distintas polarizaciones}\label{apendice: dops}
-En la siguiente tabla se lee el valor que toma el DOP para cada polarización medida en la figura \ref{fig: barrido}. 
+En la siguiente tabla se lee el valor que toma el DOP para cada polarización medida en la Figura \ref{fig: barrido}. 
 
 \begin{table}[H]
 \centering
