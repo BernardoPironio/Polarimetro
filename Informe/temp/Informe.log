@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.18)  14 JUL 2026 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.5.18)  14 JUL 2026 23:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1087,53 +1087,53 @@ Package pdftex.def Info: Figuras/0confvista_S1S3.pdf  used on input line 194.
 File: Figuras/ajuste_HWP0.pdf Graphic file (type pdf)
 <use Figuras/ajuste_HWP0.pdf>
 Package pdftex.def Info: Figuras/ajuste_HWP0.pdf  used on input line 224.
-(pdftex.def)             Requested size: 259.48683pt x 183.34167pt.
+(pdftex.def)             Requested size: 227.052pt x 160.42262pt.
 <Figuras/ajuste_HWP45.pdf, id=229, 498.4792pt x 352.1751pt>
 File: Figuras/ajuste_HWP45.pdf Graphic file (type pdf)
 <use Figuras/ajuste_HWP45.pdf>
 Package pdftex.def Info: Figuras/ajuste_HWP45.pdf  used on input line 231.
-(pdftex.def)             Requested size: 259.48683pt x 183.32555pt.
- [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figuras/esfera_3d_0conf3.pdf> <./Figuras/0confvista_S1S2.pdf> <./Figuras/0confvista_S1S3.pdf>]
-<Figuras/esfera_calibracion.pdf, id=346, 570.93298pt x 570.93298pt>
+(pdftex.def)             Requested size: 227.052pt x 160.41187pt.
+ [4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Figuras/esfera_3d_0conf3.pdf> <./Figuras/0confvista_S1S2.pdf> <./Figuras/0confvista_S1S3.pdf> <./Figuras/ajuste_HWP0.pdf> <./Figuras/ajuste_HWP45.pdf>]
+<Figuras/esfera_calibracion.pdf, id=423, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion.pdf  used on input line 274.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
-<Figuras/esfera_calibracion_S1S2.pdf, id=347, 570.93298pt x 570.93298pt>
+<Figuras/esfera_calibracion_S1S2.pdf, id=424, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion_S1S2.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion_S1S2.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion_S1S2.pdf  used on input line 281.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
-<Figuras/esfera_calibracion_S1S3.pdf, id=348, 570.93298pt x 570.93298pt>
+<Figuras/esfera_calibracion_S1S3.pdf, id=425, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion_S1S3.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion_S1S3.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion_S1S3.pdf  used on input line 288.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
- [5 <./Figuras/ajuste_HWP0.pdf> <./Figuras/ajuste_HWP45.pdf>]
-<Figuras/esfera_todas_configuraciones_con_etiquetas.pdf, id=436, 860.01299pt x 860.01299pt>
+ [5 <./Figuras/esfera_calibracion.pdf> <./Figuras/esfera_calibracion_S1S2.pdf> <./Figuras/esfera_calibracion_S1S3.pdf>]
+<Figuras/esfera_todas_configuraciones_con_etiquetas.pdf, id=552, 860.01299pt x 860.01299pt>
 File: Figuras/esfera_todas_configuraciones_con_etiquetas.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_configuraciones_con_etiquetas.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_configuraciones_con_etiquetas.pdf  used on input line 318.
 (pdftex.def)             Requested size: 324.36473pt x 324.3675pt.
-<Figuras/esfera_todas_S1S2.pdf, id=437, 715.47299pt x 715.47299pt>
+<Figuras/esfera_todas_S1S2.pdf, id=553, 715.47299pt x 715.47299pt>
 File: Figuras/esfera_todas_S1S2.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_S1S2.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_S1S2.pdf  used on input line 328.
 (pdftex.def)             Requested size: 243.26941pt x 243.26851pt.
-<Figuras/esfera_todas_S1S3.pdf, id=438, 715.47299pt x 715.47299pt>
+<Figuras/esfera_todas_S1S3.pdf, id=554, 715.47299pt x 715.47299pt>
 File: Figuras/esfera_todas_S1S3.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_S1S3.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_S1S3.pdf  used on input line 335.
 (pdftex.def)             Requested size: 243.26941pt x 243.26851pt.
- [6 <./Figuras/esfera_calibracion.pdf> <./Figuras/esfera_calibracion_S1S2.pdf> <./Figuras/esfera_calibracion_S1S3.pdf>] [7 <./Figuras/esfera_todas_configuraciones_con_etiquetas.pdf> <./Figuras/esfera_todas_S1S2.pdf> <./Figuras/esfera_todas_S1S3.pdf>]
+ [6 <./Figuras/esfera_todas_configuraciones_con_etiquetas.pdf> <./Figuras/esfera_todas_S1S2.pdf> <./Figuras/esfera_todas_S1S3.pdf>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 359.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [8]
+) [7]
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 440.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [9] [10] (temp/Informe.aux
+) [8] [9] (temp/Informe.aux
 LaTeX Info: Redefining \sptext on input line 13.
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
@@ -1149,18 +1149,18 @@ Package logreq Info: Writing requests to 'Informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51180 strings out of 474222
- 1160694 string characters out of 5748733
- 2196437 words of memory out of 5000000
+ 51179 strings out of 474222
+ 1160687 string characters out of 5748733
+ 2197432 words of memory out of 5000000
  72808 multiletter control sequences out of 15000+600000
  581318 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,101p,1196b,1840s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on temp/Informe.pdf (10 pages, 2204479 bytes).
+Output written on temp/Informe.pdf (9 pages, 2203909 bytes).
 PDF statistics:
- 863 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 858 PDF objects out of 1000 (max. 8388607)
+ 426 compressed objects within 5 object streams
+ 42 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 

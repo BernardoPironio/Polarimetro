@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber temp/Informe"] 0 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1784081414.80451 -1
+["biber temp/Informe"] 0 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1784081731.4696 -1
   "referencias.bib" 1784038696.52895 1503 b3d810f82d01f4598b5e9b99506957ad ""
-  "temp/Informe.bcf" 1784081414.63093 107569 ed0ca511bcba49d186eb59b6b55e4cc5 "pdflatex"
+  "temp/Informe.bcf" 1784081731.29089 107569 ed0ca511bcba49d186eb59b6b55e4cc5 "pdflatex"
   (generated)
   "temp/Informe.bbl"
   "temp/Informe.blg"
   (rewritten before read)
-["pdflatex"] 1784081412.44144 "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1784081414.80486 0
+["pdflatex"] 1784081729.27698 "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1784081731.46997 0
   "/etc/texmf/web2c/texmf.cnf" 1779115330.14108 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" 1784081412.19672 34310 c7fc2f6b257bee6482ec7f3974e0cd46 ""
+  "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" 1784081726.52823 34304 6256e23437f0641bbd36df3ae92dfe97 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -294,11 +294,11 @@
   "Figuras/esfera_todas_S1S3.pdf" 1784046609.36674 133802 145a9047d85db435507866a59fa3e346 ""
   "Figuras/esfera_todas_configuraciones_con_etiquetas.pdf" 1784046609.36774 142970 bb5aea0ecfc949fa9e95f359c89d4f5f ""
   "Figuras/motor_bldc_rotor_externo.pdf" 1784038696.52862 33235 83299dfdbedb1ba2396a7339ea9bb753 ""
-  "Informe.tex" 1784081412.19672 34310 c7fc2f6b257bee6482ec7f3974e0cd46 ""
-  "temp/Informe.aux" 1784081414.62293 13546 a8fa080947624998a5f567aaf109fb2c "pdflatex"
+  "Informe.tex" 1784081726.52823 34304 6256e23437f0641bbd36df3ae92dfe97 ""
+  "temp/Informe.aux" 1784081731.28189 13539 d2c5dce1107c508d943bf3a56075b966 "pdflatex"
   "temp/Informe.bbl" 1784072711.99802 7507 c3b0897f1ab6b71db35fbf28b2e7bb55 "biber temp/Informe"
-  "temp/Informe.out" 1784081414.62693 2493 49ec8a52f5b9a9e3185beb82addb34e9 "pdflatex"
-  "temp/Informe.run.xml" 1784081414.63266 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
+  "temp/Informe.out" 1784081731.28589 2493 49ec8a52f5b9a9e3185beb82addb34e9 "pdflatex"
+  "temp/Informe.run.xml" 1784081731.29285 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
   (generated)
   "temp/Informe.aux"
   "temp/Informe.bcf"
