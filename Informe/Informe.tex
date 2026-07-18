@@ -151,7 +151,13 @@ Además, para los siguientes análisis se coloca un polarizador lineal a la sali
 
 \section{Análisis de resultados: Vectores de Poincairé}
 
-Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular de la lámina de cuarto onda.
+Idealmente, la lámina de cuarto de onda introduce un retardo constante de $\pi/2$ independientemente de la rotación de esta. Sin embargo, al ajustar las curvas de intensidad de las mediciones obtenidas, se observó que fijando el retardo a dicho valor, el ajuste no parecía adecuarse a las mediciones.
+
+Por otro lado, no definir el valor de $\delta$, introducía una gran degeneración en el ajuste, ya que distintos valores del retardo podían describir los datos experimentales.
+
+Consecuentemente, con el fin de reducir esa degeneración, se opta por parametrizar el retardo según el ángulo de rotación de la lámina $\theta$. Este modelo consiste en una función partida, cambiando el valor de $delta$ según el cuadrante de la lámina de cuarto de onda.
+
+%Para modelar la intensidad medida en función del ángulo $\theta$, se utiliza un modelo dependiente de los parámetros de Stokes $(S_0,S_1,S_2,S_3)$ y de un retardo $\delta$ que varía según el cuadrante angular de la lámina de cuarto onda.
 
 \noindent El retardo se define de manera seccional como,
 
@@ -202,13 +208,24 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
 \begin{multicols}{2}
 
-Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, no se evidencia una dispersión significativa ni una distribución aleatoria de los vectores sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=($16.86$^\circ \pm $0.32$^\circ)$. 
+Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, no se evidencia una distribución aleatoria de los vectores sobre la esfera de Poincaré. Sin embargo, se observa una dispersión apreciable entre los vectores obtenidos, cuya magnitud tiene que considerarse para futuros análisis. 
+
+Con el fin de cuantificar la dispersión observada, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado a partir de la distribución de los vectores proyectados en el plano $S_1$--$S_2$. Se calculó como $\Delta\alpha=|\alpha_max - \alpha_min|$, donde $\alpha_i=arctan\left(\frac{S_{2,i}}{S_{1,i}}\right)$, siendo $S_{1,i}$ y $S_{2,i}$ los parámetros de Stokes ajustados para la medición $i$. 
+
+Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=($16.86$^\circ \pm $0.32$^\circ)$. Este valor puede deberse a la calibración realizada o las fluctuaciones experimentales del sistema mientras se realizaron las mediciones. %no se que mas decir no se que concluir
+
+
+%Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, no se evidencia una dispersión significativa ni una distribución aleatoria de los vectores sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=($16.86$^\circ \pm $0.32$^\circ)$. 
 
 \subsection{Calibración de retardos}
 
-Dado que la libertad en los parámetros $\delta$ posibilita la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonales, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. Se eligen estas dos configuraciones, ya que, como se ve en la Figura \ref{fig: aj_doble_cal}, la forma funcional de ambas difiere tanto en la fase como en la modulación de los máximos, y para la calibración se requiere obtener valores para los $\delta$ que tengan en cuenta esta distinción. 
+Dado que la libertad en los parámetros $\delta$ sigue permitiendo cierta degeneración, es decir, la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonales, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. 
 
-Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se define $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. 
+Estas configuraciones generan dos polarizaciones lineales ortogonales, que en el sistema experimental se pueden identificar como polaruzación horizontal, para $0^\circ$ y vertical para $45^\circ$. En la esfera de Poincaré, rotar la lámina de media onda $45^\circ$ siginifica que el vector en la esfera rote $180^\circ$. Utilizar estas dos curvas para realizar la calibración, permite delimitar mejor los retardos $\delta_i$.
+
+Además, se eligen estas dos configuraciones, ya que, como se ve en la Figura \ref{fig: aj_doble_cal}, la forma funcional de ambas difiere tanto en la fase como en la modulación de los máximos, y para la calibración se requiere obtener valores para los $\delta$ que tengan en cuenta esta distinción. 
+
+Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se define $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. Cabe aclarar, que también es posible calibrar $\theta_0=0$ tal que ciertos estados de polarización queden alineados con los ejes de la esfera de Poincaré.
 
 \noindent El ajuste involucra doce parámetros libres: los cuatro parámetros de Stokes correspondientes a cada una de las dos curvas y los cuatro valores de retraso $\delta_i$. Con el fin de eliminar la indeterminación asociada a una fase global, se fijó uno de los retrasos en $\delta_1$=1.57.
 %temanormalizacion
@@ -258,7 +275,7 @@ $\delta_4$ & 1.489  & 0.015 \\
 \label{tab: cal_deltas}
 \end{table}
 
-Las calibraciones de los parámetros $\delta$ se adecuan al valor esperado para la lámina de cuarto de onda ($\approx$ 1.57) rad, ya que, el valor que más difiere no supera una diferencia de 0.08 rad, una cantidad dos órdenes de magnitud menor al valor comparado.
+Las calibraciones de los parámetros $\delta$ se adecuan al valor esperado para la lámina de cuarto de onda ($\approx$ 1.57) rad.  Sin embargo, el valor que más difiere presenta una desviación de 0.08 rad, correspondiente a aproximádamente el $5\%$ del valor esperado. %y no se que mas decir , como que no es bueno o que mas
 
 Los parámetros de Stokes obtenidos para ambas configuraciones demuestran que la polarización es del tipo lineal, aunque la componente $S_3$ no es nula pero considerablemente menor. En particular, para la polarización horizontal se obtiene $S_{3H}=($0.0018$\pm$ 0.0019$)$ V, mientras que para la polarización vertical se obtiene $S_{3V}=(-$0.0811$\pm$ 0.0018$)$ V.  Para ambos casos $S_3$  resultó ser un  valor de orden de magnitud menor al resto de parámetros. Si bien idealmente debería anularse, estos resultados se pueden atribuir a imperfecciones en la preparación de la polarización lineal incidente o a la no linealidad de los elementos empleados. También puede deberse a desalineaciones de los elementos ópticos en el montaje experimental.
 %paramegros de bondad de ajuste??
@@ -296,17 +313,25 @@ En la Figura \ref{fig: doble_cal}  se observa una representación de ambos vecto
 
 \begin{multicols}{2}
 
-En la Figura \ref{fig: doble_cal c} se aprecia nuevamente la presencia de una pequeña componente $S_3$. Sin embargo, al proyectar los vectores sobre el plano $S_1-S_2$ (Fig. \ref{fig: doble_cal b}) se observa que ambos ocupan posiciones aproximadamente opuestas sobre la esfera de Poincaré. Para cuantificar este comportamiento se calculó el producto escalar entre los vectores de Stokes normalizados correspondientes a ambas polarizaciones, obteniéndose $\vec{s_H} . \vec{s_V}=-$0.9937 $\pm$ 0.0005, para tener una referencia numérica de cuan opuestos son. Este resultado es próximo al valor ideal de $-1$, correspondiente a dos estados de polarización ortogonales representados por vectores antipodales sobre la esfera de Poincaré. De forma equivalente, el ángulo entre ambos vectores resulta $\alpha=$173.6$^\circ$ $\pm$ 0.2$^\circ$, y se compara con el valor ideal $180^\circ$, la desviación es de 6.4$^\circ$, menos del $4\%$ del valor ideal. De esta manera, la calibración se adecúa con el modelo teórico que lo respalda.
+En la Figura \ref{fig: doble_cal c} se aprecia nuevamente la presencia de una pequeña componente $S_3$. Sin embargo, al proyectar los vectores sobre el plano $S_1-S_2$ (Fig. \ref{fig: doble_cal b}) se observa que ambos ocupan posiciones aproximadamente opuestas sobre la esfera de Poincaré. Para cuantificar este comportamiento se calculó el producto escalar entre los vectores de Stokes normalizados correspondientes a ambas polarizaciones, obteniéndose $\vec{s_H} . \vec{s_V}=-$0.9937 $\pm$ 0.0005, para tener una referencia numérica de cuan opuestos son. Este resultado es próximo al valor ideal de $-1$, correspondiente a dos estados de polarización ortogonales representados por vectores antipodales sobre la esfera de Poincaré. De forma equivalente, el ángulo entre ambos vectores resulta $\alpha=$173.6$^\circ$ $\pm$ 0.2$^\circ$.
+
+Si bien este resultado se aproxima al valor esperado de $180^\circ$, se observa una desviación de 6.4$^\circ$, un $4\%$ del valor ideal. Esto indica que los estado sobtenidos presentan una discrepancia respecto a la ortogonalidad perfecta. 
+
+Estos resultados pueden ser consecuencia de que la lámina de media onda no esté introduciendo exactamente un retardo de $\pi/2$ para la longitud de onda del láser. Se puede estudiar este efecto manteniéndo fija la lámina y variando el ángulo del polarizador del láser.
+
+Otra posible hipótesis, es que la calibración empleada no determina adecuadamente los parámetros del sistema y por ende, se observa discrepancias con los valores esperados.
 
 %tienen uniddes , los presento asi? o como los vectores depoincare?
 %hablo de algun angulo de error dado que no son perfectamente opuestos?
 
-Estas visualizaciones permitieron tomar como calibración los ajustes realizados para analizar otras configuraciones.
+%Estas visualizaciones permitieron tomar como calibración los ajustes realizados para analizar otras configuraciones.
 
 
 \subsection{Barrido de polarizaciones}
 
-Para analizar diversas polarizaciones lineales del haz, se rota la lámina de media onda para rotar el eje de dicha polarización. Teniendo la calibración previamente realizada, se ajusta la curva de una vuelta de cada configuración fijando los cuatro retardos. En la Figura \ref{fig: barrido} se observa una representación de cada uno de los vectores desde diferentes perspectivas. 
+Luego de haber calibrado la lámina de cuarto de onda, se procedió a caracterizar la respuesta ante diferentes estados de polarización del láser. Es decir, obetener los vectores de Poincaré para diferentes ángulos de rotación de la lámina de media onda que equivale a rotar el ángulo del eje de la polarización lineal.
+
+Teniendo la calibración previamente realizada, se ajusta la curva de una vuelta de cada configuración fijando los cuatro retardos. En la Figura \ref{fig: barrido} se observa una representación de cada uno de los vectores desde diferentes perspectivas. 
 
 \end{multicols}
 \begin{figure}[H]
@@ -343,9 +368,13 @@ Para analizar diversas polarizaciones lineales del haz, se rota la lámina de me
 
 \begin{multicols}{2}
 
-Siguiendo el modelo teórico, los vectores deben ubicarse sobre la superficie de la esfera (DOP = 1), dado que el haz se polarizó completamente con un polarizador lineal y la rotación de la lámina solo afecta la orientación de la polarización. Sin embargo, la Figura \ref{fig: barrido_b} muestra que hay algunos casos en los cuales no sucede (ver Apéndice \ref{apendice: dops}). El valor más alejado del grado de polarización esperado toma un valor de 0.81 para el caso en el que la lámina se rota $-24^\circ$. Además, en la Figura \ref{fig: barrido_c} se observa la presencia de la componente $S_3$, como sucedió en el análisis de la calibración. De todas formas, los vectores están contenidos en mayor proporción en el plano $S_1$ y $S_2$. 
+Siguiendo el modelo teórico, los vectores deben ubicarse sobre la superficie de la esfera (DOP = 1), dado que el haz se polarizó completamente con un polarizador lineal y la rotación de la lámina solo afecta la orientación de la polarización. Sin embargo, la Figura \ref{fig: barrido_b} muestra que hay algunos casos en los cuales no sucede (ver Apéndice \ref{apendice: dops}). El valor más alejado del grado de polarización esperado toma un valor de 0.81 para el caso en el que la lámina se rota $-24^\circ$. Esto indica que los vectores de dichas polarizaciones se encuentran dentro de la esfera, lo cual correspondería a que poseen una polarización parcial y no completa/pura. En principio, una falta de precisión en la determinación de los $\delta$ afecta a la definición de los parámetros de Stokes y por ende, el vector de la esfera de Poincaré. En segundo lugar, si la lámina de media onda no es ideal, el grado de polarización también podría verse afectado.
 
-Estos resultados demuestran que las mediciones tomadas poseen un comportamiento consistente con el modelo teórico, ya que el barrido de polarizaciones lineales produce una trayectoria en donde los vectores tienden a recorrer el ecuador de la esfera de Poincaré. Las imperfecciones pueden deberse a la no linealidad de los elementos ópticos o un desalineamiento del sistema.
+Además, en la Figura \ref{fig: barrido_c} se observa la presencia de la componente $S_3$, como sucedió en el análisis de la calibración. Aunque, los vectores están contenidos en mayor proporción en el plano $S_1$ y $S_2$ sigue habiendo resultados de algunas polarizaciones que parecen indicar que presentan componente circular o elíptica en su polarización.
+
+A partir de estos resultados, por un lado, se evidencia una tendencia compatible con la generación de polarizaciones lineales a partir de la rotación de una lámina de media onda, dado que se observa una trayectoria donde los vectores tienden a recorrer el ecuador de la esfera de Poincaré. Por otro lado, sin embargo, las discrepancias observadas en el grado de polarización $DOP$ y la presencia de la componetente $S_3$ indican que el sistema requiere ajustes en los elementos ópticos o bien en la calibración empleada.
+
+%Estos resultados demuestran que las mediciones tomadas poseen un comportamiento consistente con el modelo teórico, ya que el barrido de polarizaciones lineales produce una trayectoria en donde los vectores tienden a recorrer el ecuador de la esfera de Poincaré. Las imperfecciones pueden deberse a la no linealidad de los elementos ópticos o un desalineamiento del sistema.
 
 \section{Conclusiones}
 En este trabajo se diseña, construye y caracteriza un polarímetro óptico dinámico. Para ello es necesario desarrollar e integrar distintos subsistemas (óptico, mecánico y electrónico), incluyendo el control de velocidad del motor, la adquisición de la señal mediante el fotodiodo y la transmisión de datos a una computadora para su análisis en tiempo real. 
