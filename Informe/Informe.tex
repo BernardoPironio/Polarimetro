@@ -64,6 +64,7 @@ En la física, particularmente la óptica cuántica, el estado de polarización 
 
 Existen extensos ejemplos de la utilidad de un contar con un polarímetro, uno de estos es la codificación de información en la polarización de los fotones, ya que es un grado de libertad del cual tenemos un control robusto. Otro ejemplo aparece en la medición de resonancias oscuras de los iones, donde un estado de polarización inestable provoca que los valles de la señal de fluorescencia no sean tan distinguibles como se requiere para la medición de resonancia \cite{dark_resonance}.
 
+%no es que una de las fromas es a traves de os parametros, así se define directamente
 Una de las formas de describir el estado de polarización de la luz es a partir de los parámetros de Stokes \cite{stokes}. Estos cuatro parámetros $S_0$, $S_1$, $S_2$ y $S_3$ nos indican la intensidad de la luz, la diferencia de intensidades entre luz polarizada horizontal y vertical, la diferencia de intensidades entre luz polarizada a $45^\circ$ y $-45^\circ$ y la diferencia de intensidades entre luz polarizada circularmente a derecha e izquierda, respectivamente. Estos parámetros luego definen al vector de Stokes,
 
 \begin{equation*}
@@ -76,11 +77,15 @@ s_3
 
 \noindent donde $s_i = S_i/S_0$. Este vector nos permite representar el estado de polarización de la luz en la esfera de Poincaré, tal que los polos representan la polarización circular y el ecuador representa la polarización lineal. Además, es posible definir el grado de polarización como,
 
+%no se si agregar una esfera de poincare que muestre porque sino estamos describiendo que hay en los polos y la persona no entiende ni que es una esfera de poincare
+
 \begin{equation*}
     DOP = \sqrt{s_1^2 + s_2^2 + s_3^2}.
 \end{equation*}
 
 Entre las múltiples posibilidades para la construcción del polarímetro \cite{polarimetros}, un diseño común consiste en una lámina de onda seguida de un polarizador lineal. Para describir matemáticamente estos elementos ópticos, y por lo tanto el sistema, se utilizan las matrices de Müller.
+
+%yo explicaria que despues de la fuente iria primero el polarizador y despues la lamina porque no es redundante 
 
 Si se considera una polarización incidente descrita por $S_{in}$ y las matrices de Müller de una lámina con retardo $\delta$ (rotada un ángulo $\theta$) y un polarizador lineal(asumiendo que el eje de transmisión del polarizador está alineado con el eje horizontal con respecto a la mesa óptica) se obtiene la polarización de salida a partir de la siguiente ecuación,
 
@@ -149,6 +154,8 @@ La lámina se monta sobre un motor BLDC 2204-260KV con eje hueco, controlado por
 Para controlar la velocidad del motor se evaluaron distintos drivers que traían diversas complicaciones; en particular, el SimpleFoc Mini \cite{simple_foc_mini} funcionaba correctamente solo mediante el uso de su librería lo cual requería trabajar a la par de un encoder centrado en el motor y esto impediría el paso del haz del láser. 
 
 Finalmente, se opta por utilizar el driver Brushless 3 Click \cite{driver}. La lámina se monta sobre el motor utilizando una carcasa impresa en 3D, que permite alinear el eje de rotación del motor con el eje óptico de la lámina. El encoder no se utiliza para medir la rotación del motor directamente, ya que para lograr esto es necesario que el imán esté perfectamente alineado con el centro del motor y hacer esto bloquearía el eje por donde pasa el haz de luz. 
+
+%jailson habia dicho que repetiamos 
 
 \subsection{Implementación del dispositivo experimental}
 Se implementa cada parte del dispositivo experimental mencionada anteriormente por separado. Se logra girar el motor con la lámina y controlar su velocidad, medir la señal con el fotodiodo (ajustando la ganancia automáticamente) y analizar los datos en tiempo real, visualizando el vector en la esfera de Poincaré. Al momento de realizar las mediciones finales no se consigue implementar todo el sistema simultáneamente, por lo que las mediciones de los siguientes análisis se realizan utilizando un paso a paso, que aporta una mayor facilidad al momento de controlarlo. 
@@ -229,11 +236,11 @@ Para este conjunto de mediciones se obtiene un valor de $\Delta\alpha=($16.86$^\
 
 Dado que la libertad en los parámetros $\delta$ sigue permitiendo cierta degeneración, es decir, la existencia de múltiples valores que ajusten al modelo, se opta por determinarlos a partir del ajuste simultáneo de dos estados de polarización lineal ortogonales, obtenidos al orientar la lámina de media onda a $0^\circ$ y $45^\circ$. 
 
-Estas configuraciones generan dos polarizaciones lineales ortogonales, que en el sistema experimental se pueden identificar como polarización horizontal, para $0^\circ$ y vertical para $45^\circ$. En la esfera de Poincaré, rotar la lámina de media onda $45^\circ$ se corresponde con que el vector en la esfera rote $180^\circ$. Utilizar estas dos curvas para realizar la calibración, permite delimitar mejor los retardos $\delta_i$.
+Estas configuraciones generan dos polarizaciones lineales ortogonales, que en el sistema experimental se pueden identificar como polarización horizontal, para $0^\circ$ y vertical para $45^\circ$. En la esfera de Poincaré, rotar la lámina de media onda $45^\circ$ se corresponde con que el vector en la esfera rote $180^\circ$. Utilizar estas dos curvas para realizar la calibración, permite delimitar los retardos $\delta_i$ contemplando dos formas funcionales distintas de la intensidad medida.
 
 % Aca en vez de delimitar mejor pondria algo como permite delmitar los delta_i considerando mediciones que varian en la forma funcional o algo asio
 
-Además, se eligen estas dos configuraciones, ya que, como se ve en la Figura \ref{fig: aj_doble_cal}, la forma funcional de ambas difiere tanto en la fase como en la modulación de los máximos, y para la calibración se requiere obtener valores para los $\delta$ que tengan en cuenta esta distinción. 
+Se eligen estas dos configuraciones, ya que, como se ve en la Figura \ref{fig: aj_doble_cal}, la forma funcional de ambas difiere tanto en la fase como en la modulación de los máximos, y para la calibración se requiere obtener valores para los $\delta$ que tengan en cuenta esta distinción. 
 
 Se ajustan los valores de intensidad $I(t)$ registrados por el fotodiodo y el ángulo de rotación de la lámina de cuarto de onda ($\theta$) para una vuelta completa, donde se define $\theta=\theta_0 + \omega t $, fijando $\theta_0=0$. Cabe aclarar, que también es posible calibrar $\theta_0=0$ tal que ciertos estados de polarización queden alineados con los ejes de la esfera de Poincaré.
 
