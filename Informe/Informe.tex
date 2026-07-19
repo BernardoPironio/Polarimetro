@@ -185,7 +185,10 @@ El objetivo de las siguientes secciones es estudiar la repetibilidad de las medi
 
 \subsection{Análisis de múltiples curvas}
 
-Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de cuarto de onda para un mismo estado de polarización del haz incidente (particularmente con una rotación de $0^\circ$ de la lámina de media onda). Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
+Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para dos estados de polarización del haz incidente, correspondientes a rotaciones de $0^\circ$ y $45^\circ$ de la lámina de media onda. Para cada configuración se ajustaron múltiples curvas de intensidad obtenidas en vueltas consecutivas de la lámina de cuarto de onda y, a partir de los parámetros ajustados, se calcularon los correspondientes vectores de Poincaré. Para ambos casos, en la Figura \ref{fig: multi_curvas} se observa la distribución de vectores obtenidos de cada medición y el vector promedio, estimado por la media de los vectores individuales.
+
+%viejo para solo 0 
+%Como un primer análisis, se estudia el comportamiento de las curvas de intensidad obtenidas para consecutivas vueltas de la lámina de cuarto de onda para un mismo estado de polarización del haz incidente (correspondiente con una rotación de $0^\circ$ de la lámina de media onda). Se ajusta cada una de ellas, y a partir de los parámetros obtenidos, se calculan los vectores de Poincaré para graficarlos y compararlos. En la Figura \ref{fig: multi_curvas} se observa una comparación del caso de doce mediciones sucesivas. En naranja se representa el vector promedio, estimado por la media de vectores individuales, mientras que los restantes corresponden a cada una de las mediciones.
 
 \end{multicols}
 \begin{figure}[H]
@@ -193,36 +196,36 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/esfera_3d_0conf3.pdf}
+        \includegraphics[width=\linewidth]{Figuras/vista_3d_nueva_rep.pdf}
         \caption{Vista general de los vectores}
         \label{fig: multi_curvas a}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/0confvista_S1S2.pdf}
+        \includegraphics[width=\linewidth]{Figuras/vista_S1S2_nueva_rep.pdf}
         \caption{Vista en el plano de las componentes $S_1$ y $S_2$}
         \label{fig: multi_curvas b}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.32\columnwidth}
         \centering
-        \includegraphics[width=\linewidth]{Figuras/0confvista_S1S3.pdf}
+        \includegraphics[width=\linewidth]{Figuras/vista_S1S3_nueva_rep.pdf}
         \caption{Vista en el plano de las componentes $S_3$ y $S_1$}
         \label{fig: multi_curvas c}
     \end{subfigure}
 
-    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0° de la lámina de media onda. Las figuras (a), (b) y (c) muestran distintas perspectivas de las mismas mediciones para facilitar la visualización.}
+    \caption{Se disponen diferentes visualizaciones de los vectores de Poincaré obtenidos para la polarización lineal correspondida a una inclinación de 0° y 45° de la lámina de media onda. Las figuras (a), (b) y (c) muestran distintas perspectivas de las mismas mediciones para facilitar la visualización.}
     \label{fig: multi_curvas}
 \end{figure}
 
 \begin{multicols}{2}
 
-Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, no se evidencia una distribución aleatoria de los vectores sobre la esfera de Poincaré. Sin embargo, se observa una dispersión apreciable entre los vectores obtenidos, cuya magnitud tiene que considerarse para futuros análisis. 
+Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, para ambas configuraciones, no se evidencia una distribución aleatoria de los vectores sobre la esfera de Poincaré. Sin embargo, se observa una dispersión apreciable entre los vectores obtenidos, cuya magnitud tiene que considerarse para futuros análisis. 
 
-Con el fin de cuantificar la dispersión observada, se define un ángulo de incertidumbre $\Delta\alpha$, calculado a partir de la distribución de los vectores proyectados en el plano $S_1$--$S_2$. Se calcula como $\Delta\alpha=|\alpha_{max} - \alpha_{min}|$, donde $\alpha_i=arctan\left(\frac{S_{2,i}}{S_{1,i}}\right)$, siendo $S_{1,i}$ y $S_{2,i}$ los parámetros de Stokes ajustados para la medición $i$. 
+Con el fin de cuantificar la dispersión observada, se define un ángulo de incertidumbre $\Delta\alpha$, calculado a partir de la distribución de los vectores proyectados en el plano $S_1$--$S_2$. Se calcula como $\Delta\alpha=|\alpha_max - \alpha_min|$, donde $\alpha_i=arctan\left(\frac{S_{2,i}}{S_{1,i}}\right)$, siendo $S_{1,i}$ y $S_{2,i}$ los parámetros de Stokes ajustados para la medición $i$. 
 
-Para este conjunto de mediciones se obtiene un valor de $\Delta\alpha=($16.86$^\circ \pm $0.32$^\circ)$. Este valor puede deberse a un error sistemático en la calibración realizada o las fluctuaciones experimentales del sistema. %no se que mas decir no se que concluir
+Para la configuración de una rotación de 0° de la lámina de media onda, se obtiene un valor de $\Delta\alpha_0=($13.9$^\circ \pm $0.4$^\circ)$ y para la configuración de una rotación de 45°, el valor es de $\Delta\alpha_{45}=($13.3$^\circ \pm $0.7$^\circ)$. Estos valores pueden deberse a un error sistemático en la calibración realizada o las fluctuaciones experimentales del sistema.
 
 %Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, no se evidencia una dispersión significativa ni una distribución aleatoria de los vectores sobre la esfera de Poincaré. Este comportamiento es indicador de que el sistema representa reproducibilidad y que las variaciones son reducidas. Con el fin de cuantificar dicha dispersión, se definió un ángulo de incertidumbre $\Delta\alpha$, calculado como la desviación angular en el plano $S_1$--$S_2$. Para este conjunto de mediciones se obtuvo un valor de $\Delta\alpha=($16.86$^\circ \pm $0.32$^\circ)$. 
 
