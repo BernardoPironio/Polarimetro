@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.12)  19 JUL 2026 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.12)  19 JUL 2026 22:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -955,10 +955,10 @@ Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'spanish'.
  (c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.aux
-LaTeX Info: Redefining \. on input line 19.
-LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 19.
+(babel)             Reported on input line 17.
 )
 \openout1 = `Informe.aux'.
 
@@ -1056,124 +1056,117 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `Informe.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-
-
-Package biblatex Warning: File 'Informe.bbl' is wrong format version - expected 3.3.
-
 Package biblatex Info: ... file 'Informe.bbl' found.
-(c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.bbl)
+ (c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.bbl)
 Package biblatex Info: Reference section=0 on input line 37.
 Package biblatex Info: Reference segment=0 on input line 37.
-
-Overfull \hbox (237.25368pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 ni=N. A. N.hash=8532dcd9b16d223c619cd67d3a189304family=Bonetto, fa-mil-yi=B., gi-ven=Muriel, gi-ve-ni=M.hash=5a27c3f5ca85ef4cdf61ef0b8f77e9abfamily=Luda,
- []
-
-
-Overfull \hbox (8.85371pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 fa-mil-yi=L., gi-ven=Marcelo A., gi-ve-ni=M. A.hash=9c52be82724a9f0664c8fa2dd19cbd86family=Cormick, fa-mil-yi=C.,
- []
-
-
-Overfull \hbox (14.8262pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 gi-ven=Cecilia, gi-ve-ni=C.hash=69cd751f10a0f611639095b42c6779d4family=Schmiegelow, fa-mil-yi=S., gi-ven=Christian
- []
-
-
-Overfull \hbox (307.36989pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 author1hash=7d4a39be9dac82a520c3f96c30b12a67family=Hauge, fa-mil-yi=H., gi-ven=P. S., gi-ve-ni=P. S.                  author1hash=420519e6cc2adf5a1accee8c41800478family=Siliconix,
- []
-
-
-Overfull \hbox (91.2268pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 mil-yi=C., gi-ven=Cystech Elec-tro-nics, gi-ve-ni=C. E.               author1hash=bdd95750033c6d1e71751acaf3c3d8defamily=Semiconductors,
- []
-
-
-Overfull \hbox (54.71585pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 yi=C., gi-ven=Renesas Tech-no-logy, gi-ve-ni=R. T.               author1hash=03eb7fa9a11a8c6d79113b8a4ace0c93family=Foundation,
- []
-
-
-Overfull \hbox (67.405pt too wide) in paragraph at lines 23--38
-\T1/cmr/m/n/10.95 fa-mil-yi=F., gi-ven=Raspberry Pi, gi-ve-ni=R. P.              author1hash=d282a057eb053dd913f94275fa9c50e4family=SimpleFOCDocs,
- []
-
 LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
-(C:\Users\barcr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\barcr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
  (C:\Users\barcr\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+
+LaTeX Warning: Citation 'dark_resonance' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Citation 'stokes' on page 1 undefined on input line 68.
+
+
+LaTeX Warning: Citation 'polarimetros' on page 1 undefined on input line 86.
+
+[1
 
 {C:/Users/barcr/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-<Figuras/dispositivo_experimental.pdf, id=86, 845.04686pt x 597.50786pt>
+<Figuras/dispositivo_experimental.pdf, id=84, 845.04686pt x 597.50786pt>
 File: Figuras/dispositivo_experimental.pdf Graphic file (type pdf)
 <use Figuras/dispositivo_experimental.pdf>
 Package pdftex.def Info: Figuras/dispositivo_experimental.pdf  used on input line 132.
 (pdftex.def)             Requested size: 216.23764pt x 152.89584pt.
- [2 <./Figuras/dispositivo_experimental.pdf>]
-<Figuras/motor_bldc_rotor_externo.pdf, id=118, 595.22375pt x 598.235pt>
+
+
+LaTeX Warning: Citation 'fotodiodo' on page 2 undefined on input line 138.
+
+
+LaTeX Warning: Citation 'regulador' on page 2 undefined on input line 138.
+
+
+LaTeX Warning: Citation 'amplificador_operacional' on page 2 undefined on input line 138.
+
+
+LaTeX Warning: Citation 'potenciometro' on page 2 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'raspberry_pi' on page 2 undefined on input line 142.
+
+<Figuras/motor_bldc_rotor_externo.pdf, id=88, 595.22375pt x 598.235pt>
 File: Figuras/motor_bldc_rotor_externo.pdf Graphic file (type pdf)
 <use Figuras/motor_bldc_rotor_externo.pdf>
 Package pdftex.def Info: Figuras/motor_bldc_rotor_externo.pdf  used on input line 149.
 (pdftex.def)             Requested size: 162.18236pt x 162.99527pt.
- [3 <./Figuras/motor_bldc_rotor_externo.pdf>]
-<Figuras/vista_3d_nueva_rep.pdf, id=229, 566.59679pt x 566.59679pt>
+[2 <./Figuras/dispositivo_experimental.pdf>]
+
+LaTeX Warning: Citation 'simple_foc_mini' on page 3 undefined on input line 154.
+
+
+LaTeX Warning: Citation 'driver' on page 3 undefined on input line 156.
+
+[3 <./Figuras/motor_bldc_rotor_externo.pdf>]
+<Figuras/vista_3d_nueva_rep.pdf, id=209, 566.59679pt x 566.59679pt>
 File: Figuras/vista_3d_nueva_rep.pdf Graphic file (type pdf)
 <use Figuras/vista_3d_nueva_rep.pdf>
 Package pdftex.def Info: Figuras/vista_3d_nueva_rep.pdf  used on input line 199.
 (pdftex.def)             Requested size: 172.99672pt x 172.989pt.
-<Figuras/vista_S1S2_nueva_rep.pdf, id=230, 566.59679pt x 566.59679pt>
+<Figuras/vista_S1S2_nueva_rep.pdf, id=210, 566.59679pt x 566.59679pt>
 File: Figuras/vista_S1S2_nueva_rep.pdf Graphic file (type pdf)
 <use Figuras/vista_S1S2_nueva_rep.pdf>
 Package pdftex.def Info: Figuras/vista_S1S2_nueva_rep.pdf  used on input line 206.
 (pdftex.def)             Requested size: 172.99672pt x 172.989pt.
-<Figuras/vista_S1S3_nueva_rep.pdf, id=231, 566.59679pt x 566.59679pt>
+<Figuras/vista_S1S3_nueva_rep.pdf, id=211, 566.59679pt x 566.59679pt>
 File: Figuras/vista_S1S3_nueva_rep.pdf Graphic file (type pdf)
 <use Figuras/vista_S1S3_nueva_rep.pdf>
 Package pdftex.def Info: Figuras/vista_S1S3_nueva_rep.pdf  used on input line 213.
 (pdftex.def)             Requested size: 172.99672pt x 172.989pt.
  [4 <./Figuras/vista_3d_nueva_rep.pdf> <./Figuras/vista_S1S2_nueva_rep.pdf> <./Figuras/vista_S1S3_nueva_rep.pdf>]
-<Figuras/ajuste_HWP0.pdf, id=341, 498.44844pt x 352.1751pt>
+<Figuras/ajuste_HWP0.pdf, id=322, 498.44844pt x 352.1751pt>
 File: Figuras/ajuste_HWP0.pdf Graphic file (type pdf)
 <use Figuras/ajuste_HWP0.pdf>
 Package pdftex.def Info: Figuras/ajuste_HWP0.pdf  used on input line 253.
 (pdftex.def)             Requested size: 227.052pt x 160.42262pt.
-<Figuras/ajuste_HWP45.pdf, id=342, 498.4792pt x 352.1751pt>
+<Figuras/ajuste_HWP45.pdf, id=323, 498.4792pt x 352.1751pt>
 File: Figuras/ajuste_HWP45.pdf Graphic file (type pdf)
 <use Figuras/ajuste_HWP45.pdf>
 Package pdftex.def Info: Figuras/ajuste_HWP45.pdf  used on input line 260.
 (pdftex.def)             Requested size: 227.052pt x 160.41187pt.
-<Figuras/esfera_calibracion.pdf, id=345, 570.93298pt x 570.93298pt>
+<Figuras/esfera_calibracion.pdf, id=326, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion.pdf  used on input line 302.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
-<Figuras/esfera_calibracion_S1S2.pdf, id=346, 570.93298pt x 570.93298pt>
+<Figuras/esfera_calibracion_S1S2.pdf, id=327, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion_S1S2.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion_S1S2.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion_S1S2.pdf  used on input line 309.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
-<Figuras/esfera_calibracion_S1S3.pdf, id=347, 570.93298pt x 570.93298pt>
+<Figuras/esfera_calibracion_S1S3.pdf, id=328, 570.93298pt x 570.93298pt>
 File: Figuras/esfera_calibracion_S1S3.pdf Graphic file (type pdf)
 <use Figuras/esfera_calibracion_S1S3.pdf>
 Package pdftex.def Info: Figuras/esfera_calibracion_S1S3.pdf  used on input line 316.
 (pdftex.def)             Requested size: 172.99672pt x 172.99742pt.
  [5 <./Figuras/ajuste_HWP0.pdf> <./Figuras/ajuste_HWP45.pdf>]
-<Figuras/esfera_todas_configuraciones_con_etiquetas.pdf, id=436, 860.01299pt x 860.01299pt>
+<Figuras/esfera_todas_configuraciones_con_etiquetas.pdf, id=416, 860.01299pt x 860.01299pt>
 File: Figuras/esfera_todas_configuraciones_con_etiquetas.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_configuraciones_con_etiquetas.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_configuraciones_con_etiquetas.pdf  used on input line 354.
 (pdftex.def)             Requested size: 324.36473pt x 324.3675pt.
-<Figuras/esfera_todas_S1S2.pdf, id=437, 715.47299pt x 715.47299pt>
+<Figuras/esfera_todas_S1S2.pdf, id=417, 715.47299pt x 715.47299pt>
 File: Figuras/esfera_todas_S1S2.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_S1S2.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_S1S2.pdf  used on input line 364.
 (pdftex.def)             Requested size: 243.26941pt x 243.26851pt.
-<Figuras/esfera_todas_S1S3.pdf, id=438, 715.47299pt x 715.47299pt>
+<Figuras/esfera_todas_S1S3.pdf, id=418, 715.47299pt x 715.47299pt>
 File: Figuras/esfera_todas_S1S3.pdf Graphic file (type pdf)
 <use Figuras/esfera_todas_S1S3.pdf>
 Package pdftex.def Info: Figuras/esfera_todas_S1S3.pdf  used on input line 371.
@@ -1183,9 +1176,9 @@ Package pdftex.def Info: Figuras/esfera_todas_S1S3.pdf  used on input line 371.
 LaTeX Warning: Empty bibliography on input line 401.
 
 [8] [9] [10] (c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.aux
-LaTeX Info: Redefining \sptext on input line 17.
-LaTeX Info: Redefining \. on input line 17.
-LaTeX Info: Redefining \% on input line 17.
+LaTeX Info: Redefining \sptext on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -1210,53 +1203,17 @@ Package logreq Info: Writing requests to 'Informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53279 strings out of 467871
- 1226505 string characters out of 5418376
- 2330240 words of memory out of 5000000
- 81536 multiletter control sequences out of 15000+600000
- 650308 words of font info for 102 fonts, out of 8000000 for 9000
+ 53221 strings out of 467871
+ 1224763 string characters out of 5418376
+ 2328968 words of memory out of 5000000
+ 81489 multiletter control sequences out of 15000+600000
+ 651091 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,108p,1317b,1848s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{cite.0@driver} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@simple_foc_mini} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@raspberry_pi} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@potenciometro} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@amplificador_operacional} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@regulador} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@fotodiodo} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{equation.1.1} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@polarimetros} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@stokes} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.0@dark_resonance} has been referenced but does not exist, replaced by a fixed one
-
- <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.pdf (10 pages, 2147801 bytes).
+ <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm0900.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\barcr\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1728.pk><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/barcr/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on c:/Users\barcr\OneDrive\Documents\Polarimetro\Informe\temp\Informe.pdf (10 pages, 2150419 bytes).
 PDF statistics:
- 1182 PDF objects out of 1200 (max. 8388607)
- 47 named destinations out of 1000 (max. 500000)
+ 1179 PDF objects out of 1200 (max. 8388607)
+ 35 named destinations out of 1000 (max. 500000)
  182 words of extra memory for PDF output out of 10000 (max. 10000000)
 
