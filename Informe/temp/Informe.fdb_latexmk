@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber temp/Informe"] 1784470661.85726 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1784476474.47438 0
+["biber temp/Informe"] 1784554820.51849 "temp/Informe.bcf" "temp/Informe.bbl" "temp/Informe" 1784559602.00234 0
   "referencias.bib" 1784466936.8727 2542 46132e6f04566608ad3931f288895430 ""
-  "temp/Informe.bcf" 1784476474.29594 107767 6e8754a141a5bc3be4023b9efb869d09 "pdflatex"
+  "temp/Informe.bcf" 1784559601.82235 107767 6e8754a141a5bc3be4023b9efb869d09 "pdflatex"
   (generated)
   "temp/Informe.bbl"
   "temp/Informe.blg"
   (rewritten before read)
-["pdflatex"] 1784476472.16748 "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1784476474.47469 0
+["pdflatex"] 1784559599.79831 "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" "temp/Informe.pdf" "Informe" 1784559602.0027 0
   "/etc/texmf/web2c/texmf.cnf" 1779115330.14108 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" 1784476471.91775 40282 81e63638b8c68474b1c797961c811710 ""
+  "/home/bernie/Desktop/Polarimetro/Informe/Informe.tex" 1784559597.3655 41748 a55c5bbf143f70f51265b0c059156e18 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1000.tfm" 1136768653 3584 2d666ecf6d466d8b007246bc2f94d9da ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1136768653 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -26,6 +26,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm" 1136768653 3072 8b5a64dc91775463bc95e2d818524028 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm" 1136768653 1536 a988bfe554c1f79514bd46d13c3c64ce ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1136768653 1536 c4f439db76ef96a9c53bc437f35ffe20 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -282,12 +283,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1779115412.75054 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1779115555 8213322 817eda4e0f65bad499cfa379fc6042ea ""
-  "Figuras/0confvista_S1S2.pdf" 1784046609.35474 75877 1882878e25561e0b584ef7587e92a001 ""
-  "Figuras/0confvista_S1S3.pdf" 1784046609.35574 99717 ec5609fad53c9cf829b8f7a89da1ae5f ""
   "Figuras/ajuste_HWP0.pdf" 1784046609.35674 27609 891cf1ab9fa886d48451800736cbd105 ""
   "Figuras/ajuste_HWP45.pdf" 1784046609.35674 27227 722b409dd5ebe94e76daf913c1c0ea82 ""
   "Figuras/dispositivo_experimental.pdf" 1784038696.52831 669103 74a740d25080d90d518610f67ffdb513 ""
-  "Figuras/esfera_3d_0conf3.pdf" 1784046609.35874 88706 f98191642614a1b59d075e99365bf786 ""
   "Figuras/esfera_calibracion.pdf" 1784046609.35974 131704 e3043dc64bf671c5751a264e826d0e3e ""
   "Figuras/esfera_calibracion_S1S2.pdf" 1784046609.36174 121506 9c5afa21a063dc09feeae656d014eee0 ""
   "Figuras/esfera_calibracion_S1S3.pdf" 1784046609.36274 127768 d3fc77ac802f42720258a8bbca66d1a6 ""
@@ -295,11 +293,14 @@
   "Figuras/esfera_todas_S1S3.pdf" 1784046609.36674 133802 145a9047d85db435507866a59fa3e346 ""
   "Figuras/esfera_todas_configuraciones_con_etiquetas.pdf" 1784046609.36774 142970 bb5aea0ecfc949fa9e95f359c89d4f5f ""
   "Figuras/motor_bldc_rotor_externo.pdf" 1784038696.52862 33235 83299dfdbedb1ba2396a7339ea9bb753 ""
-  "Informe.tex" 1784476471.91775 40282 81e63638b8c68474b1c797961c811710 ""
-  "temp/Informe.aux" 1784476474.28694 13975 4ae938a8356932938e1ca184e48ce186 "pdflatex"
-  "temp/Informe.bbl" 1784470662.74085 12198 72dc1fc5578f968e41794635d2cced61 "biber temp/Informe"
-  "temp/Informe.out" 1784476474.29094 2493 49ec8a52f5b9a9e3185beb82addb34e9 "pdflatex"
-  "temp/Informe.run.xml" 1784476474.29756 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
+  "Figuras/vista_3d_nueva_rep.pdf" 1784554686.63976 90573 11acc5ca71e07a9d30a24d662a930d15 ""
+  "Figuras/vista_S1S2_nueva_rep.pdf" 1784554686.64276 76803 356db91b97fd4687c513a1c94ef85cd1 ""
+  "Figuras/vista_S1S3_nueva_rep.pdf" 1784554686.64676 100814 19bf46676c6ec9585d050449b3d2f1c4 ""
+  "Informe.tex" 1784559597.3655 41748 a55c5bbf143f70f51265b0c059156e18 ""
+  "temp/Informe.aux" 1784559601.81435 13911 c4532e64f6554b4cbbd7033294bd1a98 "pdflatex"
+  "temp/Informe.bbl" 1784554822.80822 12198 72dc1fc5578f968e41794635d2cced61 "biber temp/Informe"
+  "temp/Informe.out" 1784559601.81835 2677 50797fe507504db474e4978a54df12cc "pdflatex"
+  "temp/Informe.run.xml" 1784559601.8245 2368 d914b9898bb5e2d45b3bac449b3d832f "pdflatex"
   (generated)
   "temp/Informe.aux"
   "temp/Informe.bcf"

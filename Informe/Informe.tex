@@ -146,7 +146,7 @@ La lámina se monta sobre un motor BLDC 2204-260KV con eje hueco, controlado por
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width = 0.3\textwidth]{Figuras/motor_bldc_rotor_externo.pdf}
+    \includegraphics[width = 0.22\textwidth]{Figuras/motor_bldc_rotor_externo.pdf}
     \caption{Se observa un esquema del motor visto desde frente. Este posee el rotor con imanes permanentes cuyos colores (azul y rojo) representan la alternación en la polaridad de cada imán. En el centro se ubica el estator que contiene a las bobinas con las tres fases, representadas en rojo, verde y amarillo claro. Finalmente, se nota que el centro del motor es hueco.}
     \label{fig: motor}
 \end{figure}
@@ -194,7 +194,7 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 \begin{figure}[H]
     \centering
 
-    \begin{subfigure}{0.32\columnwidth}
+    \begin{subfigure}{0.33\columnwidth}
         \centering
         \includegraphics[width=\linewidth]{Figuras/vista_3d_nueva_rep.pdf}
         \caption{Vista general de los vectores}
@@ -223,7 +223,7 @@ Como un primer análisis, se estudia el comportamiento de las curvas de intensid
 
 Este previo análisis es necesario para evaluar la repetibilidad de las mediciones y determinar su dispersión para un mismo estado de polarización. En este caso, para ambas configuraciones, no se evidencia una distribución aleatoria de los vectores sobre la esfera de Poincaré. Sin embargo, se observa una dispersión apreciable entre los vectores obtenidos, cuya magnitud tiene que considerarse para futuros análisis. 
 
-Con el fin de cuantificar la dispersión observada, se define un ángulo de incertidumbre $\Delta\alpha$, calculado a partir de la distribución de los vectores proyectados en el plano $S_1$--$S_2$. Se calcula como $\Delta\alpha=|\alpha_max - \alpha_min|$, donde $\alpha_i=arctan\left(\frac{S_{2,i}}{S_{1,i}}\right)$, siendo $S_{1,i}$ y $S_{2,i}$ los parámetros de Stokes ajustados para la medición $i$. 
+Con el fin de cuantificar la dispersión observada, se define un ángulo de incertidumbre $\Delta\alpha$, calculado a partir de la distribución de los vectores proyectados en el plano $S_1$--$S_2$. Se calcula como $\Delta\alpha=|\alpha_{max} - \alpha_{min}|$, donde $\alpha_i=arctan\left(\frac{S_{2,i}}{S_{1,i}}\right)$, siendo $S_{1,i}$ y $S_{2,i}$ los parámetros de Stokes ajustados para la medición $i$. 
 
 Para la configuración de una rotación de 0° de la lámina de media onda, se obtiene un valor de $\Delta\alpha_0=($13.9$^\circ \pm $0.4$^\circ)$ y para la configuración de una rotación de 45°, el valor es de $\Delta\alpha_{45}=($13.3$^\circ \pm $0.7$^\circ)$. Estos valores pueden deberse a un error sistemático en la calibración realizada o las fluctuaciones experimentales del sistema.
 
@@ -283,7 +283,7 @@ $\delta_3$  & 1.577 & 0.008 \\
 $\delta_4$ & 1.489  & 0.015 \\
 \hline
 \end{tabular}
-\caption{Valores medidos para cada $\delta$ con su respectivo error. Se distingue que los valores se adecuan al valor esperado para la lámina de cuarto de onda, siendo que el más lejano no supera una diferencia de 0.08, una cantidad dos órdenes de magnitud menor que el valor tabulado.}\label{tabla: deltas}
+\caption{Valores medidos para cada $\delta$ con su respectivo error. Se distingue que los valores se adecuan al valor esperado para la lámina de cuarto de onda, siendo que el más lejano no supera una diferencia de 0.08.}\label{tabla: deltas}
 \label{tab: cal_deltas}
 \end{table}
 
@@ -394,11 +394,14 @@ Si bien se implementan y validan los diferentes subsistemas del dispositivo, la 
 
 En cuanto al análisis de las mediciones, se logra visualizar una distribución no aleatoria, aunque con una desviación apreciable, para dos polarizaciones distintas. La calibración realizada a partir de dos estados de polarización lineal, correspondientes a orientaciones de la lámina de media onda de $0^\circ$ y $45^\circ$, permite determinar los retardos efectivos de cada cuadrante e incorporarlos al modelo de ajuste para otras configuraciones de polarización. A partir de esta calibración, los vectores de Poincaré obtenidos para un barrido de distintas polarizaciones lineales determinadas según la rotación de una lámina de media onda, parecen mostrar una trayectoria alrededor del ecuador de la esfera, asimilándose a la teoría esperada. No obstante, algunas configuraciones presentan una componente residual $S_3$ y DOP's cercanos a 0.8, lo que sugiere la presencia de desalineación del sistema experimental o de no linealidad de los elementos ópticos que afecten la polarización del haz. Otra de las hipótesis, es que el modelo de calibración aún requiere modificaciones.
 
-Finalmente, los resultados obtenidos constituyen un paso importante en el desarrollo del proyecto; sin embargo, será necesario continuar perfeccionando la calibración y el montaje experimental para concretar la implementación integra del sistema.
+Finalmente, los resultados obtenidos constituyen un paso importante en el desarrollo del proyecto; sin embargo, será necesario continuar perfeccionando la calibración y el montaje experimental para concretar la implementación íntegra del sistema.
 
 \end{multicols}
 
 \printbibliography
+
+\section{Declaración del uso de IA}
+En este trabajo utilizamos ChatGPT y Claude para: sugerencias de redacción y parafraseo durante todo el informe (solo para oraciones específicas), sugerencias de depuración del código y optimización del mismo. No se utilizaron herramientas de IA para generar datos, interpretar resultados ni elaborar las conclusiones. Todo el contenido técnico y experimental fue realizado y verificado por los y las estudiantes.
 
 \appendix
 
@@ -581,5 +584,7 @@ $-45^{\circ}$  & 1.00$\pm$0.04   \\
 \caption{Valores del DOP para distintas polarizaciones. El ángulo indica la rotación de la lámina de media onda con respecto a $0^{\circ}$.}
 \label{tabla: dops}
 \end{table}
+
+
 
 \end{document}
